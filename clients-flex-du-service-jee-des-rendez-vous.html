@@ -1,0 +1,1337 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Construire un service web Java EE avec l'IDE Netbeans 6.5 et le serveur Java EE Glassfish">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/webservice-netbeans-glassfish-fev-2009/clients-flex-du-service-jee-des-rendez-vous.html">
+      
+      
+        <link rel="prev" href="clients-net-du-service-j2ee-des-rendez-vous.html">
+      
+      
+        <link rel="next" href="conclusion.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>6. Clients Flex du service JEE des rendez-vous - Construire un service web Java EE avec l'IDE Netbeans 6.5 et le serveur Java EE Glassfish</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var siteName = "Construire un service web Java EE avec l'IDE Netbeans 6.5 et le serveur Java EE Glassfish";
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+  </script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#6-clients-flex-du-service-jee-des-rendez-vous" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Construire un service web Java EE avec l&#39;IDE Netbeans 6.5 et le serveur Java EE Glassfish" class="md-header__button md-logo" aria-label="Construire un service web Java EE avec l'IDE Netbeans 6.5 et le serveur Java EE Glassfish" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Construire un service web Java EE avec l'IDE Netbeans 6.5 et le serveur Java EE Glassfish
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              6. Clients Flex du service JEE des rendez-vous
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer au mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Passer au mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer au mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Passer au mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://stahe.github.io/webservice-netbeans-glassfish-fev-2009" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Construire un service web Java EE avec l&#39;IDE Netbeans 6.5 et le serveur Java EE Glassfish" class="md-nav__button md-logo" aria-label="Construire un service web Java EE avec l'IDE Netbeans 6.5 et le serveur Java EE Glassfish" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Construire un service web Java EE avec l'IDE Netbeans 6.5 et le serveur Java EE Glassfish
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://stahe.github.io/webservice-netbeans-glassfish-fev-2009" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="la-nature-du-service-web-realise.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. La nature du service web réalisé
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fonctionnement-de-lapplication.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Fonctionnement de l'application
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="le-service-web-j2ee-des-rendez-vous.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Le service web J2EE des rendez-vous
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="clients-net-du-service-j2ee-des-rendez-vous.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Clients .NET du service J2EE des rendez-vous
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Clients Flex du service JEE des rendez-vous
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="clients-flex-du-service-jee-des-rendez-vous.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Clients Flex du service JEE des rendez-vous
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#61-un-premier-client-flex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1. Un premier client Flex
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#62-un-deuxieme-client-flex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2. Un deuxième client Flex
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="conclusion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Conclusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="6-clients-flex-du-service-jee-des-rendez-vous">6. Clients Flex du service JEE des rendez-vous</h1>
+<p>Nous présentons maintenant deux clients <strong>Flex</strong> du service web JEE des rendez-vous. L&#x27;IDE utilisé est Flex Builder 3. Une version de démonstration de ce produit est téléchargeable à l&#x27;Url [https://www.adobe.com/cfusion/tdrc/index.cfm?loc=fr_fr&amp;product=flex]. Flex Builder 3 est un IDE Eclipse. Par ailleurs, pour exécuter le client Flex, nous utilisons un serveur web Apache de l&#x27;outil <strong>Wamp</strong> [http://www.wampserver.com/]. N&#x27;importe quel serveur <strong>Apache</strong> fait l&#x27;affaire. Le navigateur qui affiche le client Flex doit disposer du plugin <strong>Flash Player</strong> version 9 minimale.</p>
+<p>Les applications Flex ont la particularité de s&#x27;exécuter au sein du plugin Flash Player du navigateur. En cela elles se rapprochent des applications Ajax qui embarquent dans les pages envoyées au navigateur des scripts JavaScript qui sont ensuite exécutés au sein du navigateur. Une application Flex n&#x27;est pas une application web au sens où on l&#x27;entend habituellement : c&#x27;est une application cliente de services délivrés par des serveurs web. En cela, elle est analogue à une application de bureau qui serait cliente de ces mêmes services. Elle diffère cependant en un point : elle est téléchargée initialement depuis un serveur web au sein d&#x27;un navigateur disposant du plugin Flash Player capable de l&#x27;exécuter. </p>
+<p>Comme une application de bureau, une application Flex est composée principalement de deux éléments :</p>
+<ul>
+  <li>une partie <b>présentation</b> : les vues affichées dans le navigateur. Ces vues ont la richesse des fenêtres des applications de bureau. Une vue est décrite à l&#x27;aide d&#x27;un langage à balises appelé <b>MXML</b>.
+  </li>
+  <li>une partie <b>code</b> qui gère principalement les événements provoqués par les actions de l&#x27;utilisateur sur la vue. Ce code peut être écrit également en <b>MXML</b> ou avec un langage orienté objet appelé <b>ActionScript</b>. Il faut distinguer deux types d&#x27;événements :
+  </li>
+  <li>l&#x27;événement qui nécessite d&#x27;avoir un échange avec le serveur web : remplissage d&#x27;une liste par des données fournies par une application web, envoi des données d&#x27;un formulaire au serveur, ... Flex fournit un certain nombre de méthodes pour communiquer avec le serveur de façon transparente pour le développeur. Ces méthodes sont par défaut <b>asynchrones</b> : l&#x27;utilisateur peut continuer à interagir avec la vue pendant la requête au serveur.
+  </li>
+  <li>l&#x27;événement qui modifie la vue affichée sans échange de données avec le serveur, par exemple tirer un élément d&#x27;un arbre pour le déposer dans une liste. Ce type d&#x27;événement est entièrement traité localement au sein du navigateur.
+  </li>
+</ul>
+
+<p>Une application Flex est souvent exécutée de la façon suivante :</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000349000000FDC1BA74C5.png" style="display:inline-block; margin:4px;width:11.127cm;height:3.348cm;" class="odt-zoomable" data-zoom-src="images/1000000000000349000000FDC1BA74C5.png" /></td></tr></table>
+
+<ul>
+  <li>en [1], une page Html est demandée
+  </li>
+  <li>en [2], elle est envoyée. Elle embarque avec elle un fichier binaire <b>SWF</b> (<b>S</b>hock<b>W</b>ave <b>F</b>lash)contenant l&#x27;intégralité de l&#x27;application Flex : toutes les vues et le code de gestion des événements de celles-ci. Ce fichier sera exécuté par le plugin FlashPlayer  du navigateur.
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000370000000F2DC4EA6C0.png" style="display:inline-block; margin:4px;width:11.642cm;height:3.201cm;" class="odt-zoomable" data-zoom-src="images/1000000000000370000000F2DC4EA6C0.png" /></td></tr></table>
+
+<ul>
+  <li>l&#x27;exécution du client Flex se fait en local sur le navigateur sauf lorsqu&#x27;il a besoin de données externes. Dans ce cas, il les demande au serveur [3]. Il les reçoit en [4] selon des formats divers : XML ou binaire. L&#x27;application interrogée sur le serveur web peut être écrite dans un langage quelconque. Seul compte le format de la réponse.
+  </li>
+</ul>
+
+<p>Nous avons décrit l&#x27;architecture d&#x27;exécution d&#x27;une application Flex afin que le lecteur perçoive bien la différence entre celle-ci et celle d&#x27;une application Web classique, sans Ajax, telle que l&#x27;application Asp.Net décrite précédemment. Dans cette dernière, le navigateur est passif : il affiche simplement des pages Html construites sur le serveur web qui les lui envoie.</p>
+<p>Dans la suite, nous donnons deux exemples de clients Flex dans le seul but de montrer la diversité des clients d&#x27;un service web. L&#x27;auteur étant lui-même un débutant Flex, certains points ne seront peut-être pas détaillés comme ils le devraient.</p>
+<h2 id="61-un-premier-client-flex">6.1. Un premier client Flex</h2>
+<p>Nous écrivons maintenant un premier client Flex pour afficher la liste des clients. L&#x27;architecture client / serveur mise en place sera la suivante :</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005800000012353A40504.png" style="display:inline-block; margin:4px;width:17.997cm;height:3.72cm;" class="odt-zoomable" data-zoom-src="images/10000000000005800000012353A40504.png" /></td></tr></table>
+
+<p>Dans cette architecture, il y a deux serveurs web :</p>
+<ul>
+  <li>le serveur Glassfish qui exécute le service web distant
+  </li>
+  <li>le serveur Apache qui exécute le client Flex du service web distant
+  </li>
+</ul>
+
+<p>Nous construisons le client Flex avec l&#x27;IDE Flex Builder 3 :</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004B400000126A37AAFC5.png" style="display:inline-block; margin:4px;width:15.928cm;height:3.889cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B400000126A37AAFC5.png" /></td></tr></table>
+
+<ul>
+  <li>dans Flex Builder 3, on crée un nouveau projet en [1]
+  </li>
+  <li>on lui donne un nom en [2] et on précise en [3] dans quel dossier le générer
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CF000001232F8635B0.png" style="display:inline-block; margin:4px;width:16.286cm;height:3.851cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CF000001232F8635B0.png" /></td></tr></table>
+
+<ul>
+  <li>en [4], on donne un nom à l&#x27;application principale (celle qui va être exécutée)
+  </li>
+  <li>en [5], le projet une fois généré
+  </li>
+  <li>en [6], le fichier MXML principal de l&#x27;application
+  </li>
+  <li>un fichier MXML comporte une vue et le code de gestion des événements de cette vue. L&#x27;onglet [Source] [7] donne accès au fichier MXML. On y trouvera des balises &lt;mx&gt; décrivant la vue ainsi que du code ActionScript.
+  </li>
+  <li>la vue peut être construite graphiquement en utilisant l&#x27;onglet [Design] [8]. Les balises MXML décrivant la vue sont alors générées automatiquement dans l&#x27;onglet [Source]. L&#x27;inverse est vrai : les balises MXML ajoutées directement dans l&#x27;onglet [Source] sont reflétées graphiquement dans l&#x27;onglet [Design].
+  </li>
+</ul>
+
+<p>Comme il a été fait avec les clients C# et Asp.Net précédents, nous allons générer le proxy local C [B] du service web distant S [A] :</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000056F00000129F3FF2416.png" style="display:inline-block; margin:4px;width:17.997cm;height:3.842cm;" class="odt-zoomable" data-zoom-src="images/100000000000056F00000129F3FF2416.png" /></td></tr></table>
+
+<p>Pour que le proxy C puisse être généré, il faut que le service web JEE soit actif.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003CF000000C221312307.png" style="display:inline-block; margin:4px;width:12.899cm;height:2.566cm;" class="odt-zoomable" data-zoom-src="images/10000000000003CF000000C221312307.png" /></td></tr></table>
+
+<ul>
+  <li>en [1], choisir l&#x27;option <i>Data / Import Web Service</i>
+  </li>
+  <li>en [2], sélectionner le dossier de génération des classes et interfaces du proxy C.
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000511000002984672209D.png" style="display:inline-block; margin:4px;width:17.159cm;height:8.784cm;" class="odt-zoomable" data-zoom-src="images/1000000000000511000002984672209D.png" /></td></tr></table>
+
+<ul>
+  <li>en [3], mettre l&#x27;Uri du fichier WSDL du service web distant S (cf paragraphe <a href="le-service-web-j2ee-des-rendez-vous.html#uri-service-web">4.10.2</a>) puis passer à l&#x27;étape suivante
+  </li>
+  <li>en [4] et [5], le service web décrit par le fichier WSDL indiqué en [3]
+  </li>
+  <li>en [6] : la liste des méthodes qui vont être générées pour le proxy C. On notera que ce ne sont pas les méthodes réelles du service S. Elles n&#x27;ont pas la bonne signature. Ici, chaque méthode présentée a un unique paramètre quelque soit le nombre de paramètres de la méthode réelle du service web. Cet unique paramètre est une instance de classe encapsulant dans ses champs les paramètres attendus par la méthode distante.
+  </li>
+  <li>en [7] : le package dans lequel les classes et interfaces du proxy C vont être générées
+  </li>
+  <li>en [8] : le nom de la classe locale qui fera office de proxy vers le service web distant
+  </li>
+  <li>en [9] : terminer l&#x27;assistant.
+  </li>
+  <li>en [10] : la liste des classes et interfaces du proxy C généré.
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001B000000081A015FB8E.png" style="display:inline-block; margin:4px;width:5.715cm;height:1.707cm;" class="odt-zoomable" data-zoom-src="images/10000000000001B000000081A015FB8E.png" /></td></tr></table>
+
+<ul>
+  <li>en [11] : la classe [WsDaoJpaService] implémentant les méthodes du proxy C.
+  </li>
+</ul>
+
+<p>La classe [WsDaoJpaService] générée implémente l&#x27;interface [IWsDaoJpaService] suivante :</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
+<span class="odt-code-line">/**</span>
+<span class="odt-code-line"> * Service.as</span>
+<span class="odt-code-line"> * This file was auto-generated from WSDL by the Apache Axis2 generator modified by Adobe</span>
+<span class="odt-code-line"> * Any change made to this file will be overwritten when the code is re-generated.</span>
+<span class="odt-code-line"> */</span>
+<span class="odt-code-line"><span style="font-weight:bold;color:#9900cc">package</span><span style="color:#000000"> generated.webservices{</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> mx.rpc.AsyncToken;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> flash.utils.ByteArray;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> mx.rpc.soap.types.*;</span></span>
+<span class="odt-code-line">               </span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#0033ff">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#9900cc">interface</span><span style="color:#000000"> IWsDaoJpaService</span></span>
+<span class="odt-code-line">    {</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-style:italic;color:#009900">//Stub functions for the getAllClients operation</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#3f5fbf">/**</span></span>
+<span class="odt-code-line">         * Call the operation on the server passing in the arguments defined in the WSDL file</span>
+<span class="odt-code-line">         * @param getAllClients</span>
+<span class="odt-code-line">         * @return An AsyncToken</span>
+<span class="odt-code-line">         */</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> getAllClients(getAllClients:GetAllClients):AsyncToken;</span></span>
+<span class="odt-code-line">....</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> getAllClients_send():AsyncToken;</span></span>
+<span class="odt-code-line">...</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#0033ff">get</span><span style="color:#000000"> getAllClients_lastResult():GetAllClientsResponse;</span></span>
+<span class="odt-code-line">...</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#0033ff">set</span><span style="color:#000000"> getAllClients_lastResult(lastResult:GetAllClientsResponse):</span><span style="font-weight:bold;color:#0033ff">void</span><span style="color:#000000">;</span></span>
+<span class="odt-code-line">...</span>
+<span class="odt-code-line"><span style="color:#000000">       </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> addgetAllClientsEventListener(listener:Function):</span><span style="font-weight:bold;color:#0033ff">void</span><span style="color:#000000">;</span></span>
+<span class="odt-code-line">...</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#0033ff">get</span><span style="color:#000000"> getAllClients_request_var():GetAllClients_request;</span></span>
+<span class="odt-code-line">...</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#0033ff">set</span><span style="color:#000000"> getAllClients_request_var(request:GetAllClients_request):</span><span style="font-weight:bold;color:#0033ff">void</span><span style="color:#000000">;</span></span>
+<span class="odt-code-line">...</span>
+<span class="odt-code-line">    }</span>
+<span class="odt-code-line">}</span>
+</code></pre></div>
+
+<ul>
+  <li><span style="color: #000000">ligne 11 : l&#x27;interface [IWsDaoJpaService] implémentée par la classe [WsDaoJpaService]</span>
+  </li>
+  <li><span style="color: #000000">lignes 19-31 : les différentes méthodes générées pour la méthode </span><b><span style="color: #000000">getAllClients</span></b><span style="color: #000000">() du service web distant. La seule qui se rapproche de celle réellement exposée par le service web est celle de la ligne 19. Elle porte le bon nom mais n&#x27;a pas la bonne signature : la  méthode </span><b><span style="color: #000000">getAllClients</span></b><span style="color: #000000">() du service web distant n&#x27;a pas de paramètres.</span>
+  </li>
+</ul>
+
+<p><span style="color: #000000">Le paramètre unique de la méthode <strong>getAllClients</strong> du proxy C généré est de type <strong>GetAllClients</strong> suivant :</span></p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
+<span class="odt-code-line">/**</span>
+<span class="odt-code-line"> * GetAllClients.as</span>
+<span class="odt-code-line"> * This file was auto-generated from WSDL by the Apache Axis2 generator modified by Adobe</span>
+<span class="odt-code-line"> * Any change made to this file will be overwritten when the code is re-generated.</span>
+<span class="odt-code-line"> */</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="font-weight:bold;color:#9900cc">package</span><span style="color:#000000"> generated.webservices</span></span>
+<span class="odt-code-line">{</span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> mx.utils.ObjectProxy;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> flash.utils.ByteArray;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> mx.rpc.soap.types.*;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f5fbf">/**</span></span>
+<span class="odt-code-line">     * Wrapper class for a operation required type</span>
+<span class="odt-code-line">     */</span>
+<span class="odt-code-line">    </span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#0033ff">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#9900cc">class</span><span style="color:#000000"> GetAllClients</span></span>
+<span class="odt-code-line">    {</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#3f5fbf">/**</span></span>
+<span class="odt-code-line">         * Constructor, initializes the type class</span>
+<span class="odt-code-line">         */</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#0033ff">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> GetAllClients() {}</span></span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line">    }</span>
+<span class="odt-code-line">}</span>
+</code></pre></div>
+
+<p><span style="color: #000000">C&#x27;est une classe vide. Cela pourrait correspondre au fait que la méthode cible <em>getAllClients</em> n&#x27;admet pas de paramètre.</span></p>
+<p><span style="color: #000000">Maintenant examinons les classes générées pour les entités <em>Medecin</em>, <em>Client</em>, <em>Rv</em> et <em>Creneau</em>. Examinons par exemple la classe <em>Client</em> :</span></p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
+<span class="odt-code-line"><span style="font-weight:bold;color:#9900cc">package</span><span style="color:#000000"> generated.webservices</span></span>
+<span class="odt-code-line">{</span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> mx.utils.ObjectProxy;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> flash.utils.ByteArray;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> mx.rpc.soap.types.*;</span></span>
+<span class="odt-code-line">    </span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#0033ff">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#9900cc">class</span><span style="color:#000000"> Client </span><span style="font-weight:bold;color:#0033ff">extends</span><span style="color:#000000"> generated.webservices.Personne</span></span>
+<span class="odt-code-line">    {</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#0033ff">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> Client() {}</span></span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line">    }</span>
+<span class="odt-code-line">}</span>
+</code></pre></div>
+
+<p><span style="color: #000000">La classe <em>Client</em> est vide également. Elle dérive (ligne 7) de la classe <em>Personne</em> suivante :</span></p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
+<span class="odt-code-line"><span style="font-weight:bold;color:#9900cc">package</span><span style="color:#000000"> generated.webservices</span></span>
+<span class="odt-code-line">{</span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> mx.utils.ObjectProxy;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> flash.utils.ByteArray;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> mx.rpc.soap.types.*;</span></span>
+<span class="odt-code-line">    </span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#0033ff">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#9900cc">class</span><span style="color:#000000"> Personne</span></span>
+<span class="odt-code-line">    {</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#0033ff">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> Personne() {}</span></span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#0033ff">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#6699cc">var</span><span style="color:#000000"> id:Number;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#0033ff">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#6699cc">var</span><span style="color:#000000"> nom:String;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#0033ff">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#6699cc">var</span><span style="color:#000000"> prenom:String;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#0033ff">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#6699cc">var</span><span style="color:#000000"> titre:String;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="font-weight:bold;color:#0033ff">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#6699cc">var</span><span style="color:#000000"> version:Number;</span></span>
+<span class="odt-code-line">    }</span>
+<span class="odt-code-line">}</span>
+</code></pre></div>
+
+<ul>
+  <li><span style="color: #000000">lignes 11-15 : on retrouve les attributs de la classe </span><i><span style="color: #000000">Personne</span></i><span style="color: #000000"> définie au sein du service web JEE.</span>
+  </li>
+</ul>
+
+<p><span style="color: #000000">Nous avons les principaux éléments du proxy C. Nous pouvons désormais l&#x27;utiliser.</span></p>
+<p><span style="color: #000000">Le fichier principal [rdvmedecins01.xml] du client est le suivant :</span></p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
+<span class="odt-code-line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="odt-code-line"><span style="color:#0000ff">&lt;mx:Application</span><span style="color:#000000"> xmlns:mx=&quot;</span><span style="color:#990000">http://www.adobe.com/2006/mxml</span><span style="color:#000000">&quot; layout=&quot;</span><span style="color:#990000">vertical</span><span style="color:#000000">&quot; creationComplete=&quot;init();&quot;</span><span style="color:#0000ff">&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#006633">&lt;mx:Script&gt;</span></span>
+<span class="odt-code-line">        &lt;![CDATA[</span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> generated.webservices.Client;</span></span>
+<span class="odt-code-line">...</span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-style:italic;color:#009900">// données</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#6699cc">var</span><span style="color:#000000"> ws:WsDaoJpaService;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            [</span><span style="font-weight:bold;color:#0033ff">Bindable</span><span style="color:#000000">]</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#6699cc">var</span><span style="color:#000000"> clients:ArrayCollection;</span></span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> init():</span><span style="font-weight:bold;color:#0033ff">void</span><span style="color:#000000">{</span></span>
+<span class="odt-code-line">...</span>
+<span class="odt-code-line">            }</span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> loadClients():</span><span style="font-weight:bold;color:#0033ff">void</span><span style="color:#000000">{</span></span>
+<span class="odt-code-line">...</span>
+<span class="odt-code-line">            }</span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line"><span style="color:#000000">...</span>            </span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> displayClient(client:Client):String{</span></span>
+<span class="odt-code-line">...</span>
+<span class="odt-code-line">            } </span>
+<span class="odt-code-line">        ]]&gt;</span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#006633">&lt;/mx:Script&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;mx:Label</span><span style="color:#000000"> text=&quot;</span><span style="color:#990000">Liste des clients</span><span style="color:#000000">&quot; fontSize=&quot;</span><span style="color:#990000">14</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">/&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;mx:List</span><span style="color:#000000"> dataProvider=&quot;</span><span style="color:#990000">{</span><span style="color:#000000">clients</span><span style="color:#990000">}</span><span style="color:#000000">&quot; labelFunction=&quot;</span><span style="color:#990000">displayClient</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">&gt;&lt;/mx:List&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;mx:Button</span><span style="color:#000000"> label=&quot;</span><span style="color:#990000">Afficher les clients</span><span style="color:#000000">&quot; click=&quot;loadClients()&quot;</span><span style="color:#0000ff">/&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;mx:Text</span><span style="color:#000000"> id=&quot;</span><span style="color:#990000">txtMsgErreur</span><span style="color:#000000">&quot; width=&quot;</span><span style="color:#990000">454</span><span style="color:#000000">&quot; height=&quot;</span><span style="color:#990000">75</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">/&gt;</span></span>
+<span class="odt-code-line">    </span>
+<span class="odt-code-line">&lt;/mx:Application&gt;</span>
+</code></pre></div>
+
+<p><span style="color: #000000">Dans ce code, il faut distinguer diverses choses :</span></p>
+<ul>
+  <li><span style="color: #000000">la définition de l&#x27;application (ligne 2)</span>
+  </li>
+  <li><span style="color: #000000">la description de la vue de celle-ci (lignes 27-30)</span>
+  </li>
+  <li><span style="color: #000000">les gestionnaires d&#x27;événements en langage ActionScript au sein de la balise &lt;mx:Script&gt; (lignes 3-26).</span>
+  </li>
+</ul>
+
+<p><span style="color: #000000">Commentons pour commencer, la définition de l&#x27;application elle-même et la description de sa vue :</span></p>
+<ul>
+  <li><span style="color: #000000">ligne 2 : définit </span>
+    <ul>
+      <li><span style="color: #000000">le mode de disposition des composants dans le conteneur de la vue. L&#x27;attribut </span><i><span style="color: #000000">layout=&quot;vertical&quot;</span></i><span style="color: #000000"> indique que les composants seront les uns sous les autres.</span>
+      </li>
+      <li><span style="color: #000000">la méthode à exécuter lorsque la vue aura été instanciée, c.a.d. le moment où tous ses composants auront été instanciés.  L&#x27;attribut </span><i><span style="color: #000000">creationComplete=&quot;init();&quot;</span></i><span style="color: #000000">  indique que c&#x27;est la méthode </span><i><span style="color: #000000">init</span></i><span style="color: #000000"> de la ligne 13 qui doit être exécutée. </span><i><span style="color: #000000">creationComplete</span></i><span style="color: #000000"> est l&#x27;un des événements que peut émettre la classe </span><i><span style="color: #000000">Application</span></i><span style="color: #000000">.</span>
+      </li>
+    </ul>
+  </li>
+  <li><span style="color: #000000">les ligne 27-30 définissent les composants de la vue</span>
+  </li>
+  <li><span style="color: #000000">ligne 27 : définit un texte</span>
+  </li>
+  <li><span style="color: #000000">ligne 28 : une liste dans laquelle on mettra la liste des clients. La balise </span><i><span style="color: #000000">dataProvider=&quot;</span></i><i><span style="color: #990000">{</span></i><i><span style="color: #000000">clients</span></i><i><span style="color: #990000">}</span></i><i><span style="color: #000000">&quot;</span></i><span style="color: #000000"> indique la source des données qui doivent remplir la liste. Ici, la liste sera remplie avec l&#x27;objet </span><i><span style="color: #000000">clients</span></i><span style="color: #000000"> défini ligne 11. Pour pouvoir écrire </span><i><span style="color: #000000">dataProvider=&quot;</span></i><i><span style="color: #990000">{</span></i><i><span style="color: #000000">clients</span></i><i><span style="color: #990000">}</span></i><i><span style="color: #000000">&quot;,</span></i><span style="color: #000000"> il faut que le champ </span><i><span style="color: #000000">clients</span></i><span style="color: #000000"> ait l&#x27;attribut [Bindable] (ligne 10).</span><span style="color: #000000"> Cet attribut permet à une variable ActionScript d&#x27;être référencée à l&#x27;extérieur de la balise &lt;mx:Script&gt;. Le champ </span><i><span style="color: #000000">clients</span></i><span style="color: #000000"> est de type </span><i><span style="color: #000000">ArrayCollection</span></i><span style="color: #000000">, un type ActionScript qui permet de stocker des listes d&#x27;objets, ici une liste d&#x27;objet de type </span><i><span style="color: #000000">Client</span></i><span style="color: #000000">.</span>
+  </li>
+  <li><span style="color: #000000">ligne 29 : un bouton. Son événement </span><i><span style="color: #000000">click</span></i><span style="color: #000000"> est géré. L&#x27;attribut </span><i><span style="color: #000000">click=&quot;loadClients()&quot;</span></i><span style="color: #000000"> indique que la méthode </span><i><span style="color: #000000">loadClients</span></i><span style="color: #000000"> de la ligne 17 doit être exécutée lors d&#x27;un clic sur le bouton. Ce sera ce bouton qui déclenchera la demande au service web de la liste des clients.</span>
+  </li>
+  <li><span style="color: #000000">ligne 30 : une zone de texte destinée à afficher un éventuel message d&#x27;erreur qui serait renvoyé par le serveur sur la demande précédente.</span>
+  </li>
+</ul>
+
+<p><span style="color: #000000">Les lignes 27-30 génèrent la vue suivante dans l&#x27;onglet [Design] :</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000048B0000021365DDCBB0.png" style="display:inline-block; margin:4px;width:15.386cm;height:7.026cm;" class="odt-zoomable" data-zoom-src="images/100000000000048B0000021365DDCBB0.png" /></td></tr></table>
+
+<ul>
+  <li><span style="color: #000000">[1] : a été généré par le composant </span><i><span style="color: #000000">Label</span></i><span style="color: #000000"> de la ligne 27</span>
+  </li>
+  <li><span style="color: #000000">[2] : a été généré par le composant </span><i><span style="color: #000000">List</span></i><span style="color: #000000"> de la ligne 28</span>
+  </li>
+  <li><span style="color: #000000">[3] : a été généré par le composant </span><i><span style="color: #000000">Button</span></i><span style="color: #000000"> de la ligne 29</span>
+  </li>
+  <li><span style="color: #000000">[4] : a été généré par le composant </span><i><span style="color: #000000">Text</span></i><span style="color: #000000"> de la ligne 30</span>
+  </li>
+  <li><span style="color: #000000">[5] : un exemple d&#x27;exécution</span>
+  </li>
+</ul>
+
+<p><span style="color: #000000">Examinons maintenant le code ActionScript de la page. Ce code gère les événements de la vue.</span></p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
+<span class="odt-code-line"><span style="color:#0000ff">&lt;mx:Application</span> xmlns:mx=&quot;<span style="color:#990000">http://www.adobe.com/2006/mxml</span>&quot; layout=&quot;<span style="color:#990000">vertical</span>&quot; creationComplete=&quot;init();&quot;<span style="color:#0000ff">&gt;</span></span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line">    <span style="color:#006633">&lt;mx:Script&gt;</span></span>
+<span class="odt-code-line">        &lt;![CDATA[</span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> generated.webservices.Client;</span></span>
+<span class="odt-code-line">...</span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-style:italic;color:#009900">// données</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#6699cc">var</span><span style="color:#000000"> ws:WsDaoJpaService;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            [</span><span style="font-weight:bold;color:#0033ff">Bindable</span><span style="color:#000000">]</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#6699cc">var</span><span style="color:#000000"> clients:ArrayCollection;</span></span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> init():</span><span style="font-weight:bold;color:#0033ff">void</span><span style="color:#000000">{</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="font-style:italic;color:#009900">// on instancie le proxy du service web</span></span>
+<span class="odt-code-line"><span style="color:#000000">                ws=</span><span style="font-weight:bold;color:#0033ff">new</span><span style="color:#000000"> WsDaoJpaService();</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="font-style:italic;color:#009900">// on configure les gestionnaires d&#x27;évts</span></span>
+<span class="odt-code-line">                ws.addgetAllClientsEventListener(loadClientsCompleted);</span>
+<span class="odt-code-line">                ws.addEventListener(FaultEvent.FAULT,loadClientsFault);</span>
+<span class="odt-code-line">            }</span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> loadClients():</span><span style="font-weight:bold;color:#0033ff">void</span><span style="color:#000000">{</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="font-style:italic;color:#009900">// on demande la liste des clients</span></span>
+<span class="odt-code-line"><span style="color:#000000">                ws.getAllClients(</span><span style="font-weight:bold;color:#0033ff">new</span><span style="color:#000000"> GetAllClients());</span></span>
+<span class="odt-code-line">            }</span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> loadClientsCompleted(event:GetAllClientsResultEvent):</span><span style="font-weight:bold;color:#0033ff">void</span><span style="color:#000000">{</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="font-style:italic;color:#009900">// on récupère les clients dans le résultat envoyé</span></span>
+<span class="odt-code-line"><span style="color:#000000">                clients=event.result </span><span style="font-weight:bold;color:#0033ff">as</span><span style="color:#000000"> ArrayCollection;</span></span>
+<span class="odt-code-line">            }</span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> loadClientsFault(event:FaultEvent):</span><span style="font-weight:bold;color:#0033ff">void</span><span style="color:#000000">{</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="font-style:italic;color:#009900">// on affiche le msg d&#x27;erreur</span></span>
+<span class="odt-code-line">                txtMsgErreur.text=event.fault.message;</span>
+<span class="odt-code-line">            }</span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> displayClient(client:Client):String{</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="font-style:italic;color:#009900">// on affiche un client</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="font-weight:bold;color:#0033ff">return</span><span style="color:#000000"> client.nom + </span><span style="font-weight:bold;color:#990000">&quot; &quot;</span><span style="color:#000000"> + client.prenom;</span></span>
+<span class="odt-code-line">            } </span>
+<span class="odt-code-line">        ]]&gt;</span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#006633">&lt;/mx:Script&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;mx:Label</span><span style="color:#000000"> text=&quot;</span><span style="color:#990000">Liste des clients</span><span style="color:#000000">&quot; fontSize=&quot;</span><span style="color:#990000">14</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">/&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;mx:List</span><span style="color:#000000"> dataProvider=&quot;</span><span style="color:#990000">{</span><span style="color:#000000">clients</span><span style="color:#990000">}</span><span style="color:#000000">&quot; labelFunction=&quot;</span><span style="color:#990000">displayClient</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">&gt;&lt;/mx:List&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;mx:Button</span><span style="color:#000000"> label=&quot;</span><span style="color:#990000">Afficher les clients</span><span style="color:#000000">&quot; click=&quot;loadClients()&quot;</span><span style="color:#0000ff">/&gt;</span></span>
+<span class="odt-code-line"><span style="color:#0000ff">&lt;mx:Text</span><span style="color:#000000"> id=&quot;</span><span style="color:#990000">txtMsgErreur</span><span style="color:#000000">&quot; width=&quot;</span><span style="color:#990000">454</span><span style="color:#000000">&quot; height=&quot;</span><span style="color:#990000">75</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">/&gt;</span></span>
+<span class="odt-code-line"></span>
+</code></pre></div>
+
+<ul>
+  <li><span style="color: #000000">ligne 9 : </span><i><span style="color: #000000">ws</span></i><span style="color: #000000"> va désigner le proxy C de type </span><i><span style="color: #000000">WsDaoJpaService</span></i><span style="color: #000000">, la classe générée précédemment qui implémente les méthodes d&#x27;accès au service web distant.</span>
+  </li>
+  <li><span style="color: #000000">ligne 13 : la méthode </span><i><span style="color: #000000">init</span></i><span style="color: #000000"> exécutée lorsque la vue a été instanciée (ligne 1)</span>
+  </li>
+  <li><span style="color: #000000">ligne 15 : une instance du proxy C est créée</span>
+  </li>
+  <li><span style="color: #000000">ligne 17 : un gestionnaire d&#x27;événement est associé à l&#x27;événement &quot;la méthode asynchrone </span><i><span style="color: #000000">GetAllClients</span></i><span style="color: #000000"> s&#x27;est terminée avec succès&quot;. Pour toute méthode </span><i><span style="color: #000000">m</span></i><span style="color: #000000"> du service web distant, le proxy C implémente une méthode </span><i><span style="color: #000000">addmEventListener</span></i><span style="color: #000000"> qui permet d&#x27;associer un gestionnaire à l&#x27;événement &quot;la méthode asynchrone </span><i><span style="color: #000000">m</span></i><span style="color: #000000"> s&#x27;est terminée avec succès&quot;. Ici, la ligne 17 indique que la méthode </span><i><span style="color: #000000">loadClientsCompleted</span></i><span style="color: #000000"> de la ligne 26 doit être exécutée lorsque le client Flex aura reçu la liste des clients.</span>
+  </li>
+  <li><span style="color: #000000">ligne 18 : un gestionnaire d&#x27;événement est associé à l&#x27;événement &quot;une méthode asynchrone du proxy C s&#x27;est terminée sur un échec&quot;. Ici, la ligne 18 indique que la méthode </span><i><span style="color: #000000">loadClientsFault</span></i><span style="color: #000000"> de la ligne 31 doit être exécutée à chaque fois qu&#x27;une requête asynchrone du proxy C vers le service web S échoue. Ici la seule requête qui sera faite est celle qui demande la liste des clients.</span>
+  </li>
+  <li><span style="color: #000000">au final, la méthode </span><i><span style="color: #000000">init</span></i><span style="color: #000000"> de la ligne 13 a instancié le proxy C et défini des gestionnaires d&#x27;événements pour la requête asynchrone qui sera faite ultérieurement.</span>
+  </li>
+  <li><span style="color: #000000">ligne 21 : la méthode exécutée lors d&#x27;un clic sur le bouton [Afficher les clients] (ligne 44)</span>
+  </li>
+  <li><span style="color: #000000">ligne 23 : la méthode asynchrone </span><i><span style="color: #000000">getAllClients</span></i><span style="color: #000000"> du proxy C est exécutée. On lui passe une instance </span><i><span style="color: #000000">GetAllClients</span></i><span style="color: #000000"> chargée d&#x27;encapsuler les paramètres de la méthode distante appelée. Ici, il n&#x27;y a aucun paramètre. On crée une instance vide. La méthode </span><i><span style="color: #000000">getAllClients</span></i><span style="color: #000000"> est asynchrone. L&#x27;exécution se poursuit sans attendre les données renvoyées par le serveur. L&#x27;utilisateur peut notamment continuer à interagir avec la vue. Les événements qu&#x27;il provoque continueront à être gérés. Grâce à la méthode </span><i><span style="color: #000000">init</span></i><span style="color: #000000">, nous savons que :</span>
+    <ul>
+      <li><span style="color: #000000">la méthode </span><i><span style="color: #000000">loadClientsCompleted</span></i><span style="color: #000000"> (ligne 26) sera exécutée lorsque le client Flex aura reçu la liste des clients</span>
+      </li>
+      <li><span style="color: #000000">la méthode </span><i><span style="color: #000000">loadClientsFault</span></i><span style="color: #000000"> (ligne 31) sera exécutée si la requête se termine sur une erreur. </span>
+      </li>
+    </ul>
+  </li>
+  <li><span style="color: #000000">ligne 28 : la liste des clients est récupérée dans l&#x27;événement. On sait que la méthode </span><i><span style="color: #000000">getAllClients</span></i><span style="color: #000000"> du service web distant renvoie une liste. On met celle-ci dans le champ </span><i><span style="color: #000000">clients</span></i><span style="color: #000000"> de la ligne 11. Un transtypage est nécessaire. La liste de la ligne 43 étant liée (Bindable) au champ clients, elle est avertie que ses données ont changé. Elle affiche alors la liste des clients. Elle  va afficher chaque élément de la liste </span><i><span style="color: #000000">clients</span></i><span style="color: #000000"> avec la méthode </span><i><span style="color: #000000">displayClient</span></i><span style="color: #000000"> (ligne 43).</span>
+  </li>
+  <li><span style="color: #000000">ligne 36 : la méthode </span><i><span style="color: #000000">displayClient</span></i><span style="color: #000000"> reçoit un type </span><i><span style="color: #000000">Client</span></i><span style="color: #000000">. Elle doit retourner la chaîne de caractères que doit afficher la liste pour ce client. Ici le nom et le prénom (ligne 38).</span>
+  </li>
+  <li><span style="color: #000000">ligne 31 : la méthode exécutée lorsqu&#x27;une requête au service web échoue. Elle reçoit un paramètre de type </span><i><span style="color: #000000">FaultEvent</span></i><span style="color: #000000">. Cette classe a un champ </span><i><span style="color: #000000">fault</span></i><span style="color: #000000"> qui encapsule l&#x27;erreur renvoyée par le serveur. </span><i><span style="color: #000000">fault.message</span></i><span style="color: #000000"> est le message accompagnant l&#x27;erreur.</span>
+  </li>
+  <li><span style="color: #000000">ligne 33 : le message d&#x27;erreur est affiché dans la zone de texte prévue à cet effet.</span>
+  </li>
+</ul>
+
+<p><span style="color: #000000">Lorsque l&#x27;application a été construite, son code exécutable se trouve dans le dossier [bin-debug] du projet Flex :</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000166000001610C9B8123.png" style="display:inline-block; margin:4px;width:4.736cm;height:4.671cm;" class="odt-zoomable" data-zoom-src="images/1000000000000166000001610C9B8123.png" /></td></tr></table>
+
+<p><span style="color: #000000">Ci-dessus,</span></p>
+<ul>
+  <li><span style="color: #000000">le fichier [rdvmedecins01.html] représente le fichier Html qui sera demandé par le navigateur au serveur web pour avoir le client Flex</span>
+  </li>
+  <li><span style="color: #000000">le fichier [rdvmedecins01.swf] est le binaire du client Flex qui sera encapsulé dans la page Html envoyée au navigateur puis exécuté par le plugin Flash Player de celui-ci.</span>
+  </li>
+</ul>
+
+<p><span style="color: #000000">Nous sommes prêts à exécuter le client Flex. Il nous faut auparavant mettre en place l&#x27;environnement d&#x27;exécution qui lui est nécessaire. Revenons à l&#x27;architecture client / serveur testée :</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000056A0000011C27005F16.png" style="display:inline-block; margin:4px;width:17.997cm;height:3.687cm;" class="odt-zoomable" data-zoom-src="images/100000000000056A0000011C27005F16.png" /></td></tr></table>
+
+<p><span style="color: #000000"><strong>Côté serveur</strong> :</span></p>
+<ul>
+  <li><span style="color: #000000">lancer le SGBD MySQL</span>
+  </li>
+  <li><span style="color: #000000">lancer le serveur Glassfish</span>
+  </li>
+  <li><span style="color: #000000">déployer le service web JEE des rendez-vous s&#x27;il n&#x27;est pas déployé</span>
+  </li>
+  <li><span style="color: #000000">éventuellement tester l&#x27;un des clients précédents pour vérifier que tout est en place côté serveur.</span>
+  </li>
+</ul>
+
+<p><span style="color: #000000"><strong>Côté client</strong> :</span></p>
+<p><span style="color: #000000">Lancer le serveur Apache à qui sera demandée l&#x27;application Flex. Ici nous utilisons l&#x27;outil </span><em><span style="color: #000000">Wamp</span></em><span style="color: #000000">. Avec cet outil, nous pouvons associer un alias au dossier [bin-debug] du projet Flex.</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000515000001546290F22B.png" style="display:inline-block; margin:4px;width:17.212cm;height:4.498cm;" class="odt-zoomable" data-zoom-src="images/1000000000000515000001546290F22B.png" /></td></tr></table>
+
+<ul>
+  <li><span style="color: #000000">l&#x27;icône de Wamp est en bas de l&#x27;écran [1]</span>
+  </li>
+  <li><span style="color: #000000">par un clic gauche sur l&#x27;icône <i>Wamp</i>, sélectionner l&#x27;option <i>Apache</i> [2] / <i>Alias Directories</i> [3, 4]</span>
+  </li>
+  <li><span style="color: #000000">sélectionner l&#x27;option [5] : <i>Add un alias</i></span>
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A5000000E45E640BC3.png" style="display:inline-block; margin:4px;width:15.73cm;height:3.016cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A5000000E45E640BC3.png" /></td></tr></table>
+
+<ul>
+  <li><span style="color: #000000">en [6] donner un alias (un nom quelconque) à l&#x27;application web qui va être exécutée</span>
+  </li>
+  <li><span style="color: #000000">en [7] indiquer la racine de l&#x27;application web qui portera cet alias : c&#x27;est le dossier [bin-debug] du projet Flex que nous venons de construire.</span>
+  </li>
+</ul>
+
+<p><span style="color: #000000">Rappelons la structure du dossier [bin-debug] du projet Flex :</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002A20000016A72845621.png" style="display:inline-block; margin:4px;width:8.916cm;height:4.789cm;" class="odt-zoomable" data-zoom-src="images/10000000000002A20000016A72845621.png" /></td></tr></table>
+
+<p><span style="color: #000000">Le fichier [rdvmedecins01.html] est le fichier Html de l&#x27;application Flex. Grâce à l&#x27;alias que nous venons de créer sur le dossier [bin-debug], ce fichier sera obtenu par l&#x27;url [http://localhost/rdvmedecins/rdvmedecins01.html]. Nous demandons celle-ci dans un navigateur disposant du plugin Flash Player version 9 ou supérieure :</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E9000001D9BE7DF49B.png" style="display:inline-block; margin:4px;width:16.63cm;height:6.258cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E9000001D9BE7DF49B.png" /></td></tr></table>
+
+<ul>
+  <li><span style="color: #000000">en [1], l&#x27;Url de l&#x27;application Flex</span>
+  </li>
+  <li><span style="color: #000000">en [2], nous demandons la liste des clients</span>
+  </li>
+  <li><span style="color: #000000">en [3], le résultat obtenu lorsque tout va bien</span>
+  </li>
+  <li><span style="color: #000000">en [4], le résultat obtenu lorsque nous demandons l&#x27;affichage des clients alors que le service web a été arrêté.</span>
+  </li>
+</ul>
+
+<p><span style="color: #000000">Vous pourriez avoir la curiosité d&#x27;afficher le code source de la page Html reçue </span></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span>
+<span class="normal"><a href="#__codelineno-0-25">25</a></span>
+<span class="normal"><a href="#__codelineno-0-26">26</a></span>
+<span class="normal"><a href="#__codelineno-0-27">27</a></span>
+<span class="normal"><a href="#__codelineno-0-28">28</a></span>
+<span class="normal"><a href="#__codelineno-0-29">29</a></span>
+<span class="normal"><a href="#__codelineno-0-30">30</a></span>
+<span class="normal"><a href="#__codelineno-0-31">31</a></span>
+<span class="normal"><a href="#__codelineno-0-32">32</a></span>
+<span class="normal"><a href="#__codelineno-0-33">33</a></span>
+<span class="normal"><a href="#__codelineno-0-34">34</a></span>
+<span class="normal"><a href="#__codelineno-0-35">35</a></span>
+<span class="normal"><a href="#__codelineno-0-36">36</a></span>
+<span class="normal"><a href="#__codelineno-0-37">37</a></span>
+<span class="normal"><a href="#__codelineno-0-38">38</a></span>
+<span class="normal"><a href="#__codelineno-0-39">39</a></span>
+<span class="normal"><a href="#__codelineno-0-40">40</a></span>
+<span class="normal"><a href="#__codelineno-0-41">41</a></span>
+<span class="normal"><a href="#__codelineno-0-42">42</a></span>
+<span class="normal"><a href="#__codelineno-0-43">43</a></span>
+<span class="normal"><a href="#__codelineno-0-44">44</a></span>
+<span class="normal"><a href="#__codelineno-0-45">45</a></span>
+<span class="normal"><a href="#__codelineno-0-46">46</a></span>
+<span class="normal"><a href="#__codelineno-0-47">47</a></span>
+<span class="normal"><a href="#__codelineno-0-48">48</a></span>
+<span class="normal"><a href="#__codelineno-0-49">49</a></span>
+<span class="normal"><a href="#__codelineno-0-50">50</a></span>
+<span class="normal"><a href="#__codelineno-0-51">51</a></span>
+<span class="normal"><a href="#__codelineno-0-52">52</a></span>
+<span class="normal"><a href="#__codelineno-0-53">53</a></span>
+<span class="normal"><a href="#__codelineno-0-54">54</a></span>
+<span class="normal"><a href="#__codelineno-0-55">55</a></span>
+<span class="normal"><a href="#__codelineno-0-56">56</a></span>
+<span class="normal"><a href="#__codelineno-0-57">57</a></span>
+<span class="normal"><a href="#__codelineno-0-58">58</a></span>
+<span class="normal"><a href="#__codelineno-0-59">59</a></span>
+<span class="normal"><a href="#__codelineno-0-60">60</a></span>
+<span class="normal"><a href="#__codelineno-0-61">61</a></span>
+<span class="normal"><a href="#__codelineno-0-62">62</a></span>
+<span class="normal"><a href="#__codelineno-0-63">63</a></span>
+<span class="normal"><a href="#__codelineno-0-64">64</a></span>
+<span class="normal"><a href="#__codelineno-0-65">65</a></span>
+<span class="normal"><a href="#__codelineno-0-66">66</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cm">&lt;!-- saved from url=(0014)about:internet --&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="cm">&lt;!-- </span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="cm">Smart developers always View Source. </span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="cm">This application was built using Adobe Flex, an open source framework</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="cm">for building rich Internet applications that get delivered via the</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="cm">Flash Player or to desktops via Adobe AIR. </span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="cm">Learn more about Flex at http://flex.org </span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="cm">// --&gt;</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="p">/&gt;</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="cm">&lt;!--  BEGIN Browser History required section --&gt;</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;history/history.css&quot;</span> <span class="p">/&gt;</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="cm">&lt;!--  END Browser History required section --&gt;</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;AC_OETags.js&quot;</span> <span class="na">language</span><span class="o">=</span><span class="s">&quot;javascript&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a>...
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">language</span><span class="o">=</span><span class="s">&quot;JavaScript&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="c">&lt;!--</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="c1">// -----------------------------------------------------------------------------</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="c1">// Globals</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="c1">// Major version of Flash required</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="kd">var</span><span class="w"> </span><span class="nx">requiredMajorVersion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">9</span><span class="p">;</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="c1">// Minor version of Flash required</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="kd">var</span><span class="w"> </span><span class="nx">requiredMinorVersion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="c1">// Minor version of Flash required</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="kd">var</span><span class="w"> </span><span class="nx">requiredRevision</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">124</span><span class="p">;</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="c1">// -----------------------------------------------------------------------------</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="c1">// --&gt;</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38"></a>
+<a id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="p">&lt;</span><span class="nt">body</span> <span class="na">scroll</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="p">&lt;</span><span class="nt">script</span> <span class="na">language</span><span class="o">=</span><span class="s">&quot;JavaScript&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="c">&lt;!--</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="c1">// Version check for the Flash Player that has the ability to start Player Product Install (6.0r65)</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="p">....</span>
+<a id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="c1">// --&gt;</span>
+<a id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<a id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="p">&lt;</span><span class="nt">noscript</span><span class="p">&gt;</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47"></a>        <span class="p">&lt;</span><span class="nt">object</span> <span class="na">classid</span><span class="o">=</span><span class="s">&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot;</span>
+<a id="__codelineno-0-48" name="__codelineno-0-48"></a>                        <span class="na">id</span><span class="o">=</span><span class="s">&quot;rdvmedecins01&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100%&quot;</span>
+<a id="__codelineno-0-49" name="__codelineno-0-49"></a>                        <span class="na">codebase</span><span class="o">=</span><span class="s">&quot;http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50"></a>                        <span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;movie&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;rdvmedecins01.swf&quot;</span> <span class="p">/&gt;</span>
+<a id="__codelineno-0-51" name="__codelineno-0-51"></a>                        <span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;quality&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;high&quot;</span> <span class="p">/&gt;</span>
+<a id="__codelineno-0-52" name="__codelineno-0-52"></a>                        <span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;bgcolor&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;#869ca7&quot;</span> <span class="p">/&gt;</span>
+<a id="__codelineno-0-53" name="__codelineno-0-53"></a>                        <span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;allowScriptAccess&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;sameDomain&quot;</span> <span class="p">/&gt;</span>
+<a id="__codelineno-0-54" name="__codelineno-0-54"></a>                        <span class="p">&lt;</span><span class="nt">embed</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;rdvmedecins01.swf&quot;</span> <span class="na">quality</span><span class="o">=</span><span class="s">&quot;high&quot;</span> <span class="na">bgcolor</span><span class="o">=</span><span class="s">&quot;#869ca7&quot;</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55"></a>                                <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;rdvmedecins01&quot;</span> <span class="na">align</span><span class="o">=</span><span class="s">&quot;middle&quot;</span>
+<a id="__codelineno-0-56" name="__codelineno-0-56"></a>                                <span class="na">play</span><span class="o">=</span><span class="s">&quot;true&quot;</span>
+<a id="__codelineno-0-57" name="__codelineno-0-57"></a>                                <span class="na">loop</span><span class="o">=</span><span class="s">&quot;false&quot;</span>
+<a id="__codelineno-0-58" name="__codelineno-0-58"></a>                                <span class="na">quality</span><span class="o">=</span><span class="s">&quot;high&quot;</span>
+<a id="__codelineno-0-59" name="__codelineno-0-59"></a>                                <span class="na">allowScriptAccess</span><span class="o">=</span><span class="s">&quot;sameDomain&quot;</span>
+<a id="__codelineno-0-60" name="__codelineno-0-60"></a>                                <span class="na">type</span><span class="o">=</span><span class="s">&quot;application/x-shockwave-flash&quot;</span>
+<a id="__codelineno-0-61" name="__codelineno-0-61"></a>                                <span class="na">pluginspage</span><span class="o">=</span><span class="s">&quot;http://www.adobe.com/go/getflashplayer&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-62" name="__codelineno-0-62"></a>                        <span class="p">&lt;/</span><span class="nt">embed</span><span class="p">&gt;</span>
+<a id="__codelineno-0-63" name="__codelineno-0-63"></a>        <span class="p">&lt;/</span><span class="nt">object</span><span class="p">&gt;</span>
+<a id="__codelineno-0-64" name="__codelineno-0-64"></a><span class="p">&lt;/</span><span class="nt">noscript</span><span class="p">&gt;</span>
+<a id="__codelineno-0-65" name="__codelineno-0-65"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p><span style="color: #000000">Le corps de la page commence ligne 39. Il ne contient pas du Html classique mais un objet (ligne 47) de type &quot;application/x-shockwave-flash&quot; (ligne 60). C&#x27;est le fichier [rdvmedecins01.swf] (ligne 54) que l&#x27;on peut voir dans le dossier [bin-debug] du projet Flex. C&#x27;est un fichier de taille importante : 600 K environ pour ce simple exemple.</span></p>
+<h2 id="62-un-deuxieme-client-flex">6.2. Un deuxième client Flex</h2>
+<p><span style="color: #000000">Le deuxième client Flex ne va pas utiliser le proxy C généré pour le premier. On veut montrer que cette étape n&#x27;est pas indispensable même si elle présente des avantages vis à vis de celle qui va être présentée ici.</span></p>
+<p><span style="color: #000000">Le projet évolue de la façon suivante :</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A800000215A95C6F33.png" style="display:inline-block; margin:4px;width:15.769cm;height:7.052cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A800000215A95C6F33.png" /></td></tr></table>
+
+<ul>
+  <li><span style="color: #000000">en [1] la nouvelle application Flex</span>
+  </li>
+  <li><span style="color: #000000">en [2] les exécutables qui lui sont associés</span>
+  </li>
+  <li><span style="color: #000000">en [3] la nouvelle vue : on va afficher la liste des médecins.</span>
+  </li>
+</ul>
+
+<p><span style="color: #000000">Le code MXML de l&#x27;application [rdvmedecins02.mxml] est le suivant :</span></p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
+<span class="odt-code-line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span class="odt-code-line"><span style="color:#0000ff">&lt;mx:Application</span><span style="color:#000000"> xmlns:mx=&quot;</span><span style="color:#990000">http://www.adobe.com/2006/mxml</span><span style="color:#000000">&quot; layout=&quot;</span><span style="color:#990000">vertical</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#006633">&lt;mx:Script&gt;</span></span>
+<span class="odt-code-line">        &lt;![CDATA[</span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> mx.rpc.events.ResultEvent;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> mx.rpc.events.FaultEvent;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">import</span><span style="color:#000000"> mx.collections.ArrayCollection;</span></span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-style:italic;color:#009900">// données</span></span>
+<span class="odt-code-line"><span style="color:#000000">            [</span><span style="font-weight:bold;color:#0033ff">Bindable</span><span style="color:#000000">]</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#6699cc">var</span><span style="color:#000000"> medecins:ArrayCollection;</span></span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> loadMedecins():</span><span style="font-weight:bold;color:#0033ff">void</span><span style="color:#000000">{</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="font-style:italic;color:#009900">// on demande la liste des médecins</span></span>
+<span class="odt-code-line">                wsrdvmedecins.getAllMedecins.send();</span>
+<span class="odt-code-line">            }</span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> loadMedecinsCompleted(event:ResultEvent):</span><span style="font-weight:bold;color:#0033ff">void</span><span style="color:#000000">{</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="font-style:italic;color:#009900">// on récupère les médecins</span></span>
+<span class="odt-code-line"><span style="color:#000000">                medecins=event.result </span><span style="font-weight:bold;color:#0033ff">as</span><span style="color:#000000"> ArrayCollection;</span></span>
+<span class="odt-code-line">            }</span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> loadMedecinsFault(event:FaultEvent):</span><span style="font-weight:bold;color:#0033ff">void</span><span style="color:#000000">{</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="font-style:italic;color:#009900">// on affiche le msg d&#x27;erreur</span></span>
+<span class="odt-code-line">                txtMsgErreur.text=event.fault.message;</span>
+<span class="odt-code-line">            } </span>
+<span class="odt-code-line">            </span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-style:italic;color:#009900">// affichage d&#x27;un médecin</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="font-weight:bold;color:#0033ff">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#339966">function</span><span style="color:#000000"> displayMedecin(medecin:Object):String{</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="font-weight:bold;color:#0033ff">return</span><span style="color:#000000"> medecin.nom + </span><span style="font-weight:bold;color:#990000">&quot; &quot;</span><span style="color:#000000"> + medecin.prenom;</span></span>
+<span class="odt-code-line">            } </span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line">        ]]&gt;</span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#006633">&lt;/mx:Script&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;mx:WebService</span><span style="color:#000000"> id=&quot;</span><span style="color:#990000">wsrdvmedecins</span><span style="color:#000000">&quot; </span></span>
+<span class="odt-code-line"><span style="color:#000000">        wsdl=&quot;</span><span style="color:#990000">http://localhost:8080/serveur-webservice-ejb-dao-jpa-hibernate/WsDaoJpaService?wsdl</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#0000ff">&lt;mx:operation</span><span style="color:#000000"> name=&quot;</span><span style="color:#990000">getAllMedecins</span><span style="color:#000000">&quot; </span></span>
+<span class="odt-code-line"><span style="color:#000000">            result=&quot;loadMedecinsCompleted(event)&quot; fault=&quot;loadMedecinsFault(event);&quot;</span><span style="color:#0000ff">&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#0000ff">&lt;mx:request/&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#0000ff">&lt;/mx:operation&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;/mx:WebService&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;mx:Label</span><span style="color:#000000"> text=&quot;</span><span style="color:#990000">Liste des médecins</span><span style="color:#000000">&quot; fontSize=&quot;</span><span style="color:#990000">14</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">/&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;mx:List</span><span style="color:#000000"> dataProvider=&quot;</span><span style="color:#990000">{</span><span style="color:#000000">medecins</span><span style="color:#990000">}</span><span style="color:#000000">&quot; labelFunction=&quot;</span><span style="color:#990000">displayMedecin</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">&gt;&lt;/mx:List&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;mx:Button</span><span style="color:#000000"> label=&quot;</span><span style="color:#990000">Afficher les médecins</span><span style="color:#000000">&quot; click=&quot;loadMedecins()&quot;</span><span style="color:#0000ff">/&gt;</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#0000ff">&lt;mx:Text</span><span style="color:#000000"> id=&quot;</span><span style="color:#990000">txtMsgErreur</span><span style="color:#000000">&quot; width=&quot;</span><span style="color:#990000">300</span><span style="color:#000000">&quot; height=&quot;</span><span style="color:#990000">113</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">/&gt;</span></span>
+<span class="odt-code-line">    </span>
+<span class="odt-code-line">&lt;/mx:Application&gt;</span>
+</code></pre></div>
+
+<p><span style="color: #000000">Nous ne commenterons que les nouveautés :</span></p>
+<ul>
+  <li><span style="color: #000000">lignes 42 - 45 : la nouvelle vue. Elle est identique à la précédente si ce n&#x27;est qu&#x27;elle a été adaptée pour afficher les médecins plutôt que les clients.</span>
+  </li>
+  <li><span style="color: #000000">lignes 35-41 : le service web est ici décrit par une balise &lt;</span><b><span style="color: #000000">mx:WebService</span></b><span style="color: #000000">&gt; (ligne 35). Le proxy C utilisé dans la version précédente n&#x27;est plus utilisé ici.</span>
+  </li>
+  <li><span style="color: #000000">ligne 35 : l&#x27;attribut </span><i><span style="color: #000000">id</span></i><span style="color: #000000"> donne un nom au service web.</span>
+  </li>
+  <li><span style="color: #000000">ligne 36 : l&#x27;attribut </span><i><span style="color: #000000">wsdl</span></i><span style="color: #000000"> donne l&#x27;uri du fichier WSDL du service web. C&#x27;est la même Uri qu&#x27;utilisée par le précédent client et définie </span><span style="color: #000000">paragraphe</span><span style="color: #000000"> </span><span style="color: #000000"><a href="le-service-web-j2ee-des-rendez-vous.html#uri-service-web">4.10.2</a></span><span style="color: #000000">.</span>
+  </li>
+  <li><span style="color: #000000">lignes 37-40 : définissent une méthode du service web distant au moyen de la balise &lt;</span><i><span style="color: #000000">mx:operation</span></i><span style="color: #000000">&gt;</span>
+  </li>
+  <li><span style="color: #000000">ligne 37 : la méthode référencée est définie par l&#x27;attribut </span><i><span style="color: #000000">name</span></i><span style="color: #000000">. Ici nous référençons la méthode distante </span><i><span style="color: #000000">getAllMedecins</span></i><span style="color: #000000">.</span>
+  </li>
+  <li><span style="color: #000000">ligne 38 : on définit les méthodes à exécuter en cas de succès de l&#x27;opération (attribut </span><i><span style="color: #000000">result</span></i><span style="color: #000000">) et en cas d&#x27;échec (attribut </span><i><span style="color: #000000">fault</span></i><span style="color: #000000">).</span>
+  </li>
+  <li><span style="color: #000000">ligne 39 : la balise &lt;</span><i><span style="color: #000000">mx:request</span></i><span style="color: #000000">&gt; sert à définir les paramètres de l&#x27;opération. Ici la méthode distante </span><i><span style="color: #000000">getAllMedecins</span></i><span style="color: #000000"> n&#x27;a pas de paramètre, donc nous ne mettons rien. Pour une méthode admettant des paramètres </span><i><span style="color: #000000">param1</span></i><span style="color: #000000"> et </span><i><span style="color: #000000">param2</span></i><span style="color: #000000">, on écrirait :</span>
+  </li>
+</ul>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">&lt;mx:Request&gt;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nt">&lt;param1&gt;</span>{param1}<span class="nt">&lt;/param1&gt;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">&lt;param1&gt;</span>{param1}<span class="nt">&lt;/param1&gt;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nt">&lt;/mx:Request&gt;</span>
+</code></pre></div>
+<p><span style="color: #000000">où </span><em><span style="color: #000000">param1</span></em><span style="color: #000000"> et </span><em><span style="color: #000000">param2</span></em><span style="color: #000000"> seraient des variables déclarées et initialisées dans la balise &lt;mx:Script&gt;</span></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">[</span><span class="nx">Bindable</span><span class="p">]</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kr">private</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">param1</span><span class="o">:</span><span class="nx">Type1</span><span class="p">;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">[</span><span class="nx">Bindable</span><span class="p">]</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kr">private</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">param2</span><span class="o">:</span><span class="nx">Type2</span><span class="p">;</span>
+</code></pre></div>
+<p><span style="color: #000000">Dans la balise &lt;</span><em><span style="color: #000000">mx:Script</span></em><span style="color: #000000">&gt; on trouve du code ActionScript analogue à celui étudié dans le client précédent. Seule diffère la méthode </span><em><span style="color: #000000">loadMedecins</span></em><span style="color: #000000"> des lignes 13-16. C&#x27;est le mode d&#x27;appel de la méthode distante [getAllMedecins] qui diffère :</span></p>
+<ul>
+  <li><span style="color: #000000">ligne 15 : on utilise le service web [wsrdvmedecins] défini ligne 35 et son opération [getAllMedecins] définie ligne 37. Pour exécuter cette opération, la méthode </span><b><span style="color: #000000">send</span></b><span style="color: #000000"> est utilisée. C&#x27;est elle qui démarre l&#x27;appel asynchrone de la méthode </span><i><span style="color: #000000">getAllMedecins</span></i><span style="color: #000000"> du service web défini ligne 35. La méthode </span><i><span style="color: #000000">send</span></i><span style="color: #000000"> fera l&#x27;appel avec les paramètres définis par la balise </span><span style="color: #000000">&lt;</span><i><span style="color: #000000">mx:request</span></i><span style="color: #000000">&gt; de la ligne 39. Ici il n&#x27;y a aucun paramètre. Si la méthode avait eu les paramètres </span><i><span style="color: #000000">param1</span></i><span style="color: #000000"> et </span><i><span style="color: #000000">param2</span></i><span style="color: #000000">, le script </span><i><span style="color: #000000">loadMedecins</span></i><span style="color: #000000"> aurait affecté des valeurs à ces paramètres avant d&#x27;appeler la méthode </span><i><span style="color: #000000">send</span></i><span style="color: #000000">.</span>
+  </li>
+</ul>
+
+<p><span style="color: #000000">Il ne nous reste plus qu&#x27;à tester cette nouvelle application :</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001090000014E854DFB8E.png" style="display:inline-block; margin:4px;width:4.911cm;height:6.189cm;" class="odt-zoomable" data-zoom-src="images/10000000000001090000014E854DFB8E.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://tahe.developpez.com" target="_blank">
+          https://tahe.developpez.com
+        </a>
+        <br>
+        Ce cours-tutoriel écrit par <strong>Serge Tahé</strong> est mis à disposition du public selon les termes de la
+        <em>Licence Creative Commons Attribution – Pas d’Utilisation Commerciale –
+        Partage dans les Mêmes Conditions 3.0 non transposé</em>.
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>
