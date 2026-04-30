@@ -141,9 +141,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer au mode sombre"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer en mode sombre"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Passer au mode sombre" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Passer en mode sombre" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -151,9 +151,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer au mode clair"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer en mode clair"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Passer au mode clair" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Passer en mode clair" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -800,15 +800,15 @@
 
 <h1 id="4-le-service-web-j2ee-des-rendez-vous">4. Le service web J2EE des rendez-vous</h1>
 <p>Revenons à l&#x27;architecture de l&#x27;application à construire :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007AF0000018DFBD084B2.png" style="display:inline-block; margin:4px;width:17.997cm;height:3.632cm;" class="odt-zoomable" data-zoom-src="images/10000000000007AF0000018DFBD084B2.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007AF0000018DFBD084B2.png" width="680" height="137" style="display:inline-block; margin:4px;width:17.997cm;height:3.632cm;" class="odt-zoomable" data-zoom-src="images/10000000000007AF0000018DFBD084B2.png" /></td></tr></table>
 
 <p>Nous nous intéressons dans cette partie à la construction du service web J2EE [1] exécuté sur un serveur Sun / Glassfish.</p>
 <h2 id="41-la-base-de-donnees">4.1. La base de données</h2>
 <p>La base de données qu&#x27;on appellera [<a id="dbrdvmedecins"></a>dbrdvmedecins] est une base de données MySQL5 avec quatre tables :</p>
-<p><img src="images/10000000000000CE0000006EB8CE00C1.png" style="width:4.36cm;height:2.33cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000CE0000006EB8CE00C1.png" /></p>
+<p><img src="images/10000000000000CE0000006EB8CE00C1.png" width="165" height="88" style="width:4.36cm;height:2.33cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000CE0000006EB8CE00C1.png" /></p>
 <h3 id="411-la-table-medecins">4.1.1. La table [MEDECINS]</h3>
 <p>Elle contient des informations sur les médecins gérés par l&#x27;application [RdvMedecins].</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000013B0000009140E8B0E1.png" style="display:inline-block; margin:4px;width:5.83cm;height:2.679cm;" class="odt-zoomable" data-zoom-src="images/100000000000013B0000009140E8B0E1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001830000006A63E8B6FD.png" style="display:inline-block; margin:4px;width:7.17cm;height:1.96cm;" class="odt-zoomable" data-zoom-src="images/10000000000001830000006A63E8B6FD.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000013B0000009140E8B0E1.png" width="220" height="101" style="display:inline-block; margin:4px;width:5.83cm;height:2.679cm;" class="odt-zoomable" data-zoom-src="images/100000000000013B0000009140E8B0E1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001830000006A63E8B6FD.png" width="271" height="74" style="display:inline-block; margin:4px;width:7.17cm;height:1.96cm;" class="odt-zoomable" data-zoom-src="images/10000000000001830000006A63E8B6FD.png" /></td></tr></table>
 
 <ul>
 <li>ID : n° identifiant le médecin - clé primaire de la table</li>
@@ -819,7 +819,7 @@
 </ul>
 <h3 id="412-la-table-clients">4.1.2. La table [CLIENTS]</h3>
 <p>Les clients des différents médecins sont enregistrés dans la table [CLIENTS] :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000015C0000009211F9EF53.png" style="display:inline-block; margin:4px;width:6.451cm;height:2.701cm;" class="odt-zoomable" data-zoom-src="images/100000000000015C0000009211F9EF53.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001720000006D8D331F7F.png" style="display:inline-block; margin:4px;width:6.849cm;height:2.02cm;" class="odt-zoomable" data-zoom-src="images/10000000000001720000006D8D331F7F.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000015C0000009211F9EF53.png" width="244" height="102" style="display:inline-block; margin:4px;width:6.451cm;height:2.701cm;" class="odt-zoomable" data-zoom-src="images/100000000000015C0000009211F9EF53.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001720000006D8D331F7F.png" width="259" height="76" style="display:inline-block; margin:4px;width:6.849cm;height:2.02cm;" class="odt-zoomable" data-zoom-src="images/10000000000001720000006D8D331F7F.png" /></td></tr></table>
 
 <ul>
 <li>ID : n° identifiant le client - clé primaire de la table</li>
@@ -830,9 +830,9 @@
 </ul>
 <h3 id="413-la-table-creneaux">4.1.3. La table [CRENEAUX]</h3>
 <p>Elle liste les créneaux horaires où les RV sont possibles : </p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000170000000B33347BA3C.png" style="display:inline-block; margin:4px;width:6.819cm;height:3.311cm;" class="odt-zoomable" data-zoom-src="images/1000000000000170000000B33347BA3C.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000170000000B33347BA3C.png" width="258" height="125" style="display:inline-block; margin:4px;width:6.819cm;height:3.311cm;" class="odt-zoomable" data-zoom-src="images/1000000000000170000000B33347BA3C.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000771000001D195E812D9.png" style="display:inline-block; margin:4px;width:17.997cm;height:4.392cm;" class="odt-zoomable" data-zoom-src="images/1000000000000771000001D195E812D9.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000771000001D195E812D9.png" width="680" height="166" style="display:inline-block; margin:4px;width:17.997cm;height:4.392cm;" class="odt-zoomable" data-zoom-src="images/1000000000000771000001D195E812D9.png" /></td></tr></table>
 
 <ul>
 <li>ID : n° identifiant le créneau horaire - clé primaire de la table (ligne 8)</li>
@@ -846,7 +846,7 @@
 <p>La seconde ligne de la table [CRENEAUX] (cf [1] ci-dessus) indique, par exemple, que le créneau n° 2 commence à 8 h 20 et se termine à 8 h 40 et appartient au médecin n° 1 (Mme Marie PELISSIER).</p>
 <h3 id="414-la-table-rv">4.1.4. La table [RV]</h3>
 <p>Elle liste les RV pris pour chaque médecin :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006E700000128C8688D7D.png" style="display:inline-block; margin:4px;width:17.997cm;height:3.014cm;" class="odt-zoomable" data-zoom-src="images/10000000000006E700000128C8688D7D.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006E700000128C8688D7D.png" width="680" height="114" style="display:inline-block; margin:4px;width:17.997cm;height:3.014cm;" class="odt-zoomable" data-zoom-src="images/10000000000006E700000128C8688D7D.png" /></td></tr></table>
 
 <ul>
 <li>ID : n° identifiant le RV de façon unique – clé primaire</li>
@@ -855,7 +855,7 @@
 <li>ID_CLIENT : n° du client pour qui est faite la réservation – clé étrangère sur le champ [ID] de la table [CLIENTS]</li>
 </ul>
 <p>Cette table a une <a id="unicitejourcreneau"></a>contrainte d&#x27;unicité sur les valeurs des colonnes jointes (JOUR, ID_CRENEAU) :</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ALTER TABLE RV ADD CONSTRAINT UNQ1_RV UNIQUE (JOUR, ID_CRENEAU);
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">RV</span><span class="w"> </span><span class="k">ADD</span><span class="w"> </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="n">UNQ1_RV</span><span class="w"> </span><span class="k">UNIQUE</span><span class="w"> </span><span class="p">(</span><span class="n">JOUR</span><span class="p">,</span><span class="w"> </span><span class="n">ID_CRENEAU</span><span class="p">);</span>
 </code></pre></div>
 <p>Si une ligne de la table[RV] a la valeur (JOUR1, ID_CRENEAU1) pour les colonnes (JOUR, ID_CRENEAU), cette valeur ne peut se retrouver nulle part ailleurs. Sinon, cela signifierait que deux RV ont été pris au même moment pour le même médecin. D&#x27;un point de vue programmation Java, le pilote JDBC de la base lance une <em>SQLException</em> lorsque ce cas se produit.</p>
 <p>La ligne d&#x27;<em>id</em> égal à 3 (cf [1] ci-dessus) signifie qu&#x27;un RV a été pris pour le créneau n° 20 et le client n° 4 le 23/08/2006. La table [CRENEAUX] nous apprend que le créneau n° 20 correspond au créneau horaire 16 h 20 - 16 h 40 et appartient au médecin n° 1 (Mme Marie PELISSIER). La table [CLIENTS] nous apprend que le client n° 4 est Melle Brigitte BISTROU.</p>
@@ -1004,7 +1004,7 @@
 </code></pre></div></td></tr></table></div>
 <h2 id="43-les-elements-de-larchitecture-cote-serveur">4.3. Les éléments de l&#x27;architecture côté serveur</h2>
 <p>Revenons à l&#x27;architecture de l&#x27;application à construire :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007C8000001890B5F1A5F.png" style="display:inline-block; margin:4px;width:17.997cm;height:3.551cm;" class="odt-zoomable" data-zoom-src="images/10000000000007C8000001890B5F1A5F.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007C8000001890B5F1A5F.png" width="680" height="134" style="display:inline-block; margin:4px;width:17.997cm;height:3.551cm;" class="odt-zoomable" data-zoom-src="images/10000000000007C8000001890B5F1A5F.png" /></td></tr></table>
 
 <p>Côté serveur, l&#x27;application sera formée :</p>
 <ol>
@@ -1025,23 +1025,23 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006B8000000F28F546AA1.png" style="display:inline-block; margin:4px;width:17.997cm;height:2.531cm;" class="odt-zoomable" data-zoom-src="images/10000000000006B8000000F28F546AA1.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006B8000000F28F546AA1.png" width="680" height="96" style="display:inline-block; margin:4px;width:17.997cm;height:2.531cm;" class="odt-zoomable" data-zoom-src="images/10000000000006B8000000F28F546AA1.png" /></td></tr></table>
 
 <ul>
   <li>par un Ejb annoté <b>@WebService</b> qui s&#x27;exécute dans un conteneur Ejb
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006BE000000F919731475.png" style="display:inline-block; margin:4px;width:17.997cm;height:2.596cm;" class="odt-zoomable" data-zoom-src="images/10000000000006BE000000F919731475.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006BE000000F919731475.png" width="680" height="98" style="display:inline-block; margin:4px;width:17.997cm;height:2.596cm;" class="odt-zoomable" data-zoom-src="images/10000000000006BE000000F919731475.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000070E0000018DC1D89649.png" style="display:inline-block; margin:4px;width:17.997cm;height:3.956cm;" class="odt-zoomable" data-zoom-src="images/100000000000070E0000018DC1D89649.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000070E0000018DC1D89649.png" width="680" height="150" style="display:inline-block; margin:4px;width:17.997cm;height:3.956cm;" class="odt-zoomable" data-zoom-src="images/100000000000070E0000018DC1D89649.png" /></td></tr></table>
 
 <p>Nous allons utiliser ici la première solution :</p>
 <p>Dans le cours [<a href="http://tahe.ftp-developpez.com/fichiers-archive/javaee.pdf"><strong>ref1</strong></a>], paragraphe 14, page 109, on trouvera un exemple utilisant la seconde solution.</p>
 <p><a id="hibernateglassfish"></a></p>
 <h2 id="44-configuration-hibernate-du-serveur-glassfish">4.4. Configuration Hibernate du serveur Glassfish</h2>
 <p>Selon sa version, le serveur Glassfish V2 livré avec Netbeans peut ne pas avoir les bibliothèques Hibernate dont la couche Jpa / Hibernate a besoin. Si dans la suite du tutoriel, vous découvrez que Glassfish ne vous propose pas d&#x27;implémentation Jpa / Hibernate ou qu&#x27;au déploiement des services, une exception indique que les bibliothèques d&#x27;Hibernate ne sont pas trouvées, vous devez rajouter les bibliothèques dans le dossier [&lt;glassfish&gt;/domains/domain1/lib/ext] puis redémarrer le serveur Glassfish :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000024B000004421260E49B.png" style="display:inline-block; margin:4px;width:7.766cm;height:14.42cm;" class="odt-zoomable" data-zoom-src="images/100000000000024B000004421260E49B.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><ul>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000024B000004421260E49B.png" width="294" height="545" style="display:inline-block; margin:4px;width:7.766cm;height:14.42cm;" class="odt-zoomable" data-zoom-src="images/100000000000024B000004421260E49B.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><ul>
   <li>en [1], le dossier &lt;glassfish&gt;/.../lib/ext
   </li>
   <li>en [2], les bibliothèques Hibernate plus quelques pilotes Jdbc
@@ -1054,7 +1054,7 @@
 <p><a id="generationautomatique"></a></p>
 <h2 id="45-les-outils-de-generation-automatique-de-netbeans">4.5. Les outils de génération automatique de Netbeans</h2>
 <p>Revenons à l&#x27;architecture que nous devons construire :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006EE000001903A1EA28D.png" style="display:inline-block; margin:4px;width:17.997cm;height:4.057cm;" class="odt-zoomable" data-zoom-src="images/10000000000006EE000001903A1EA28D.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006EE000001903A1EA28D.png" width="680" height="153" style="display:inline-block; margin:4px;width:17.997cm;height:4.057cm;" class="odt-zoomable" data-zoom-src="images/10000000000006EE000001903A1EA28D.png" /></td></tr></table>
 
 <p>Avec Netbeans, il est possible de générer automatiquement la couche [JPA] et la couche [Ejb] qui contrôle l&#x27;accès aux entités JPA générées. Il est intéressant de connaître ces méthodes de génération automatique car le code généré donne de précieuses indications sur la façon d&#x27;écrire des entités JPA ou le code Ejb qui les utilise.</p>
 <p>Nous décrivons maintenant certains de ces outils de génération automatique. Pour comprendre le code généré, il faut avoir de bonnes notions sur les entités JPA [<a href="http://tahe.ftp-developpez.com/fichiers-archive/javaee.pdf"><strong>ref1</strong></a>] et les EJB [<a href="http://tahe.ftp-developpez.com/fichiers-archive/jpa.pdf"><strong>ref2</strong></a>].</p>
@@ -1066,7 +1066,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000657000003344FB67CCA.png" style="display:inline-block; margin:4px;width:17.997cm;height:9.091cm;" class="odt-zoomable" data-zoom-src="images/1000000000000657000003344FB67CCA.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000657000003344FB67CCA.png" width="680" height="344" style="display:inline-block; margin:4px;width:17.997cm;height:9.091cm;" class="odt-zoomable" data-zoom-src="images/1000000000000657000003344FB67CCA.png" /></td></tr></table>
 
 <ul>
   <li>dans l&#x27;onglet [Files], dans la branche [Databases] [1], sélectionner le pilote Jdbc MySQL [2]
@@ -1079,7 +1079,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003040000012B42D255FB.png" style="display:inline-block; margin:4px;width:10.213cm;height:3.956cm;" class="odt-zoomable" data-zoom-src="images/10000000000003040000012B42D255FB.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003040000012B42D255FB.png" width="386" height="150" style="display:inline-block; margin:4px;width:10.213cm;height:3.956cm;" class="odt-zoomable" data-zoom-src="images/10000000000003040000012B42D255FB.png" /></td></tr></table>
 
 <ul>
   <li>en [6], la connexion est créée. On y voit les quatre tables de la base de données connectée.
@@ -1087,7 +1087,7 @@
 </ul>
 
 <p><u><strong><a id="creationmoduleejb"></a>Création d&#x27;un projet Ejb</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005DC000001318C9848C2.png" style="display:inline-block; margin:4px;width:17.997cm;height:3.66cm;" class="odt-zoomable" data-zoom-src="images/10000000000005DC000001318C9848C2.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005DC000001318C9848C2.png" width="680" height="138" style="display:inline-block; margin:4px;width:17.997cm;height:3.66cm;" class="odt-zoomable" data-zoom-src="images/10000000000005DC000001318C9848C2.png" /></td></tr></table>
 
 <ul>
   <li>en [1], créer une nouvelle application, un module Ejb
@@ -1096,7 +1096,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000068F000001649F4CA3CF.png" style="display:inline-block; margin:4px;width:17.997cm;height:3.815cm;" class="odt-zoomable" data-zoom-src="images/100000000000068F000001649F4CA3CF.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000068F000001649F4CA3CF.png" width="680" height="144" style="display:inline-block; margin:4px;width:17.997cm;height:3.815cm;" class="odt-zoomable" data-zoom-src="images/100000000000068F000001649F4CA3CF.png" /></td></tr></table>
 
 <ul>
   <li>en [4] choisir un dossier pour le projet et en [5] lui donner un nom - puis terminer l&#x27;assistant
@@ -1107,9 +1107,9 @@
 
 <p><u><strong><a id="ressourcejdbcglassfish"></a>Ajout d&#x27;une ressource JDBC au serveur Glassfish</strong></u></p>
 <p>Nous allons ajouter une ressource JDBC au serveur Glassfish.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005A40000019288308EDD.png" style="display:inline-block; margin:4px;width:17.997cm;height:5.009cm;" class="odt-zoomable" data-zoom-src="images/10000000000005A40000019288308EDD.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005A40000019288308EDD.png" width="680" height="189" style="display:inline-block; margin:4px;width:17.997cm;height:5.009cm;" class="odt-zoomable" data-zoom-src="images/10000000000005A40000019288308EDD.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000659000002E942F45F3B.png" style="display:inline-block; margin:4px;width:17.997cm;height:8.25cm;" class="odt-zoomable" data-zoom-src="images/1000000000000659000002E942F45F3B.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000659000002E942F45F3B.png" width="680" height="312" style="display:inline-block; margin:4px;width:17.997cm;height:8.25cm;" class="odt-zoomable" data-zoom-src="images/1000000000000659000002E942F45F3B.png" /></td></tr></table>
 
 <ul>
   <li>dans l&#x27;onglet [Services], lancer le serveur Glassfish [2, 3]
@@ -1118,7 +1118,7 @@
   </li>
 </ul>
 
-<p><img src="images/100000000000069500000392423D69B4.png" style="width:17.997cm;height:9.761cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000069500000392423D69B4.png" /></p>
+<p><img src="images/100000000000069500000392423D69B4.png" width="680" height="369" style="width:17.997cm;height:9.761cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000069500000392423D69B4.png" /></p>
 <ul>
   <li>en [6], sélectionner la catégorie [Glassfish] et en [7] indiquer qu&#x27;on veut créer une ressource JDBC en sélectionnant le type [JDBC Resource]
   </li>
@@ -1130,7 +1130,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006E70000036760475BF6.png" style="display:inline-block; margin:4px;width:17.997cm;height:8.871cm;" class="odt-zoomable" data-zoom-src="images/10000000000006E70000036760475BF6.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006E70000036760475BF6.png" width="680" height="335" style="display:inline-block; margin:4px;width:17.997cm;height:8.871cm;" class="odt-zoomable" data-zoom-src="images/10000000000006E70000036760475BF6.png" /></td></tr></table>
 
 <ul>
   <li>en [11], on définit les caractéristiques du pool de connexions de la ressource JDBC
@@ -1147,7 +1147,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005ED000002F79371EAC6.png" style="display:inline-block; margin:4px;width:17.997cm;height:9.005cm;" class="odt-zoomable" data-zoom-src="images/10000000000005ED000002F79371EAC6.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005ED000002F79371EAC6.png" width="680" height="340" style="display:inline-block; margin:4px;width:17.997cm;height:9.005cm;" class="odt-zoomable" data-zoom-src="images/10000000000005ED000002F79371EAC6.png" /></td></tr></table>
 
 <ul>
   <li>en [17], garder les valeurs par défaut proposées
@@ -1183,9 +1183,9 @@
 <p>Le fichier ci-dessus reprend toutes les informations saisies dans l&#x27;assistant sous un format XML. Il sera utilisé par l&#x27;IDE Netbeans pour demander au serveur Glassfish de créer la ressource &quot;jdbc/dbrdvmedecins&quot; définie ligne 4.</p>
 <p><u><strong><a id="creationunitepersistance"></a>Création d&#x27;une unité de persistance</strong></u></p>
 <p>L&#x27;unité de persistance [persistence.xml] configure la couche JPA : elle indique l&#x27;implémentation JPA utilisée (Toplink, Hibernate, ...) et configure celle-ci.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000058800000199BB57548D.png" style="display:inline-block; margin:4px;width:17.997cm;height:5.198cm;" class="odt-zoomable" data-zoom-src="images/100000000000058800000199BB57548D.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000058800000199BB57548D.png" width="680" height="196" style="display:inline-block; margin:4px;width:17.997cm;height:5.198cm;" class="odt-zoomable" data-zoom-src="images/100000000000058800000199BB57548D.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006DE000002CD738BE177.png" style="display:inline-block; margin:4px;width:17.997cm;height:7.34cm;" class="odt-zoomable" data-zoom-src="images/10000000000006DE000002CD738BE177.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006DE000002CD738BE177.png" width="680" height="277" style="display:inline-block; margin:4px;width:17.997cm;height:7.34cm;" class="odt-zoomable" data-zoom-src="images/10000000000006DE000002CD738BE177.png" /></td></tr></table>
 
 <ul>
   <li>en [1], cliquer droit sur le projet Ejb et sélectionner [New / Other] en [2]
@@ -1194,7 +1194,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006090000019501BF4E32.png" style="display:inline-block; margin:4px;width:17.997cm;height:4.717cm;" class="odt-zoomable" data-zoom-src="images/10000000000006090000019501BF4E32.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006090000019501BF4E32.png" width="680" height="178" style="display:inline-block; margin:4px;width:17.997cm;height:4.717cm;" class="odt-zoomable" data-zoom-src="images/10000000000006090000019501BF4E32.png" /></td></tr></table>
 
 <ul>
   <li>en [5], donner un nom à l&#x27;unité de persistance créée
@@ -1232,11 +1232,11 @@
 </code></pre></div></td></tr></table></div>
 <p>De nouveau, il reprend dans un format XML les informations données dans l&#x27;assistant. Ce fichier est insuffisant pour travailler avec la base MySQL5 &quot;dbrdvmedecins&quot;. Il nous faudrait indiquer à Hibernate le type de SGBD à gérer. Ce sera fait ultérieurement.</p>
 <p><u><strong><a id="creationentitesjpa"></a>Création des entités JPA</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000059000000193EA8B229F.png" style="display:inline-block; margin:4px;width:17.997cm;height:5.092cm;" class="odt-zoomable" data-zoom-src="images/100000000000059000000193EA8B229F.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000059000000193EA8B229F.png" width="680" height="192" style="display:inline-block; margin:4px;width:17.997cm;height:5.092cm;" class="odt-zoomable" data-zoom-src="images/100000000000059000000193EA8B229F.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006EF000002D42DB2CD92.png" style="display:inline-block; margin:4px;width:17.997cm;height:7.34cm;" class="odt-zoomable" data-zoom-src="images/10000000000006EF000002D42DB2CD92.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006EF000002D42DB2CD92.png" width="680" height="277" style="display:inline-block; margin:4px;width:17.997cm;height:7.34cm;" class="odt-zoomable" data-zoom-src="images/10000000000006EF000002D42DB2CD92.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000019F000000E50190CB38.png" style="display:inline-block; margin:4px;width:7.691cm;height:4.24cm;" class="odt-zoomable" data-zoom-src="images/100000000000019F000000E50190CB38.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000019F000000E50190CB38.png" width="291" height="160" style="display:inline-block; margin:4px;width:7.691cm;height:4.24cm;" class="odt-zoomable" data-zoom-src="images/100000000000019F000000E50190CB38.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
   <li>en [1], cliquer droit sur le projet et en [2] choisir l&#x27;option [New / Other]
@@ -1245,7 +1245,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000064E000002360523D696.png" style="display:inline-block; margin:4px;width:17.997cm;height:6.311cm;" class="odt-zoomable" data-zoom-src="images/100000000000064E000002360523D696.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000064E000002360523D696.png" width="680" height="239" style="display:inline-block; margin:4px;width:17.997cm;height:6.311cm;" class="odt-zoomable" data-zoom-src="images/100000000000064E000002360523D696.png" /></td></tr></table>
 
 <ul>
   <li>en [5], sélectionner la source JDBC &quot;jdbc/dbrdvmedecins&quot; que nous avons créée
@@ -1258,7 +1258,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000069700000283E13E59B0.png" style="display:inline-block; margin:4px;width:17.997cm;height:6.86cm;" class="odt-zoomable" data-zoom-src="images/100000000000069700000283E13E59B0.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000069700000283E13E59B0.png" width="680" height="259" style="display:inline-block; margin:4px;width:17.997cm;height:6.86cm;" class="odt-zoomable" data-zoom-src="images/100000000000069700000283E13E59B0.png" /></td></tr></table>
 
 <ul>
   <li>en [10], les entités JPA qui vont être générées
@@ -1329,9 +1329,9 @@
 <a id="__codelineno-4-27" name="__codelineno-4-27"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <p><u><strong><a id="creationcoucheejb"></a>Création de la couche Ejb d&#x27;accès aux entités JPA</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000587000001916A82C778.png" style="display:inline-block; margin:4px;width:17.997cm;height:5.099cm;" class="odt-zoomable" data-zoom-src="images/1000000000000587000001916A82C778.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000587000001916A82C778.png" width="680" height="193" style="display:inline-block; margin:4px;width:17.997cm;height:5.099cm;" class="odt-zoomable" data-zoom-src="images/1000000000000587000001916A82C778.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006E2000002D24DEC4166.png" style="display:inline-block; margin:4px;width:17.997cm;height:7.373cm;" class="odt-zoomable" data-zoom-src="images/10000000000006E2000002D24DEC4166.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006E2000002D24DEC4166.png" width="680" height="279" style="display:inline-block; margin:4px;width:17.997cm;height:7.373cm;" class="odt-zoomable" data-zoom-src="images/10000000000006E2000002D24DEC4166.png" /></td></tr></table>
 
 <ul>
   <li>en [1], cliquer droit sur le projet et en [2], sélectionner l&#x27;option [New / Other]
@@ -1340,7 +1340,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005CE000002D901803024.png" style="display:inline-block; margin:4px;width:17.997cm;height:8.828cm;" class="odt-zoomable" data-zoom-src="images/10000000000005CE000002D901803024.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005CE000002D901803024.png" width="680" height="334" style="display:inline-block; margin:4px;width:17.997cm;height:8.828cm;" class="odt-zoomable" data-zoom-src="images/10000000000005CE000002D901803024.png" /></td></tr></table>
 
 <ul>
   <li>en [5], les entités JPA créées précédemment sont présentées
@@ -1353,7 +1353,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005AF0000020B290C6D94.png" style="display:inline-block; margin:4px;width:17.997cm;height:6.468cm;" class="odt-zoomable" data-zoom-src="images/10000000000005AF0000020B290C6D94.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005AF0000020B290C6D94.png" width="680" height="244" style="display:inline-block; margin:4px;width:17.997cm;height:6.468cm;" class="odt-zoomable" data-zoom-src="images/10000000000005AF0000020B290C6D94.png" /></td></tr></table>
 
 <ul>
   <li>en [9], donner un nom au package des ejb qui vont être générés
@@ -1427,7 +1427,7 @@
 <p><a id="module-ejb"></a></p>
 <h2 id="46-le-projet-netbeans-du-module-ejb">4.6. Le projet Netbeans du module Ejb</h2>
 <p>Nous créons un nouveau module Ejb vierge ( cf paragraphe <a href="#creationmoduleejb">4.5</a>) :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000C9000000A943318DA3.png" style="display:inline-block; margin:4px;width:3.72cm;height:3.129cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C9000000A943318DA3.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000C9000000A943318DA3.png" width="141" height="118" style="display:inline-block; margin:4px;width:3.72cm;height:3.129cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C9000000A943318DA3.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
   <li>le package [rdvmedecins.entites] regroupe les entités de la couche Jpa
@@ -1441,10 +1441,10 @@
 <p>Dans la suite, nous supposons que le lecteur a suivi toutes les étapes du paragraphe <a href="#generationautomatique">4.5</a>. Il devra en répéter certaines.</p>
 <h3 id="461-configuration-de-la-couche-jpa">4.6.1. Configuration de la couche JPA</h3>
 <p>Rappelons l&#x27;architecture de notre application client / serveur :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006F2000001953667F99C.png" style="display:inline-block; margin:4px;width:17.997cm;height:4.099cm;" class="odt-zoomable" data-zoom-src="images/10000000000006F2000001953667F99C.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006F2000001953667F99C.png" width="680" height="155" style="display:inline-block; margin:4px;width:17.997cm;height:4.099cm;" class="odt-zoomable" data-zoom-src="images/10000000000006F2000001953667F99C.png" /></td></tr></table>
 
 <p>Le projet Netbeans :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000C4000000AA01686169.png" style="display:inline-block; margin:4px;width:3.63cm;height:3.15cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C4000000AA01686169.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000C4000000AA01686169.png" width="137" height="119" style="display:inline-block; margin:4px;width:3.63cm;height:3.15cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C4000000AA01686169.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p>La couche [JPA] est configurée par les fichiers [persistence.xml] et [sun-resources.xml] ci-dessus. Ces deux fichiers sont générés par des assistants déjà rencontrés :</p>
 <ul>
@@ -1522,10 +1522,10 @@
 
 <h3 id="462-les-entites-de-la-couche-jpa">4.6.2. Les entités de la couche JPA</h3>
 <p>Rappelons l&#x27;architecture de notre application client / serveur :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006E4000001830B105E5A.png" style="display:inline-block; margin:4px;width:17.997cm;height:3.948cm;" class="odt-zoomable" data-zoom-src="images/10000000000006E4000001830B105E5A.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006E4000001830B105E5A.png" width="680" height="149" style="display:inline-block; margin:4px;width:17.997cm;height:3.948cm;" class="odt-zoomable" data-zoom-src="images/10000000000006E4000001830B105E5A.png" /></td></tr></table>
 
 <p>Le projet Netbeans :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001AA0000021629974784.png" style="display:inline-block; margin:4px;width:5.636cm;height:7.064cm;" class="odt-zoomable" data-zoom-src="images/10000000000001AA0000021629974784.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001AA0000021629974784.png" width="213" height="267" style="display:inline-block; margin:4px;width:5.636cm;height:7.064cm;" class="odt-zoomable" data-zoom-src="images/10000000000001AA0000021629974784.png" /></td></tr></table>
 
 <p>Le package [rdvmedecins.entites] implémente la couche [Jpa].</p>
 <p>Nous avons vu au paragraphe <a href="#creationentitesjpa">4.5</a>, comment générer automatiquement les entités Jpa d&#x27;une application. Nous n&#x27;utiliserons pas ici cette technique mais définirons nous-mêmes les entités. Celles-ci reprendront cependant une bonne partie du code généré au paragraphe <a href="#creationentitesjpa">4.5</a>. Ici, nous souhaitons que les entités [Medecin] et [Client] soient des classes filles d&#x27;une classe [Personne].</p>
@@ -1935,7 +1935,7 @@
 </ul>
 
 <h3 id="463-la-classe-dexception">4.6.3. La classe d&#x27;exception</h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001FA0000017AF881B675.png" style="display:inline-block; margin:4px;width:6.694cm;height:5.001cm;" class="odt-zoomable" data-zoom-src="images/10000000000001FA0000017AF881B675.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001FA0000017AF881B675.png" width="253" height="189" style="display:inline-block; margin:4px;width:6.694cm;height:5.001cm;" class="odt-zoomable" data-zoom-src="images/10000000000001FA0000017AF881B675.png" /></td></tr></table>
 
 <p>La classe d&#x27;exception [<a id="rdvmedecinsexception"></a>RdvMedecinsException] de l&#x27;application est la suivante :</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
@@ -2040,13 +2040,13 @@
 </ul>
 
 <p>Pour comprendre l&#x27;annotation @<strong>ApplicationException</strong> revenons à l&#x27;architecture utilisée côté serveur :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006F10000018DB1872083.png" style="display:inline-block; margin:4px;width:17.997cm;height:4.02cm;" class="odt-zoomable" data-zoom-src="images/10000000000006F10000018DB1872083.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006F10000018DB1872083.png" width="680" height="152" style="display:inline-block; margin:4px;width:17.997cm;height:4.02cm;" class="odt-zoomable" data-zoom-src="images/10000000000006F10000018DB1872083.png" /></td></tr></table>
 
 <p>L&#x27;exception de type [RdvMedecinsException] sera lancée par les méthodes de l&#x27;Ejb de la couche [dao] à l&#x27;intérieur du conteneur Ejb3 et interceptée par celui-ci. Sans l&#x27;annotation @<strong>ApplicationException</strong> le conteneur Ejb3 encapsule l&#x27;exception survenue, dans une exception de type [EjbException] et relance celle-ci. On peut ne pas vouloir de cette encapsulation et laisser sortir du conteneur Ejb3 une exception de type [RdvMedecinsException]. C&#x27;est ce que permet l&#x27;annotation @<strong>ApplicationException</strong>. Par ailleurs, l&#x27;attribut (<strong>rollback=true</strong>) de cette annotation indique au conteneur Ejb3 que si l&#x27;exception de type [RdvMedecinsException] se produit à l&#x27;intérieur d&#x27;une méthode exécutée au sein d&#x27;une transaction avec un SGBD, celle-ci doit être annulée. En termes techniques, cela s&#x27;appelle faire un <em>rollback</em> de la transaction.</p>
 <h3 id="464-lejb-de-la-couche-dao">4.6.4. L&#x27;Ejb de la couche [dao]</h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006EA0000019081977FBB.png" style="display:inline-block; margin:4px;width:17.997cm;height:4.066cm;" class="odt-zoomable" data-zoom-src="images/10000000000006EA0000019081977FBB.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006EA0000019081977FBB.png" width="680" height="154" style="display:inline-block; margin:4px;width:17.997cm;height:4.066cm;" class="odt-zoomable" data-zoom-src="images/10000000000006EA0000019081977FBB.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001BE000001BA901989A5.png" style="display:inline-block; margin:4px;width:5.9cm;height:5.847cm;" class="odt-zoomable" data-zoom-src="images/10000000000001BE000001BA901989A5.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001BE000001BA901989A5.png" width="223" height="221" style="display:inline-block; margin:4px;width:5.9cm;height:5.847cm;" class="odt-zoomable" data-zoom-src="images/10000000000001BE000001BA901989A5.png" /></td></tr></table>
 
 <p>L&#x27;interface java [<a id="idao"></a>IDao] de la couche [dao] est la suivante :</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1"> 1</a></span>
@@ -2398,12 +2398,12 @@
 </ul>
 
 <p>Le module Ejb une fois compilé donne naissance à un <a id="ejbjar"></a>fichier .jar :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000276000003311030468E.png" style="display:inline-block; margin:4px;width:8.334cm;height:10.809cm;" class="odt-zoomable" data-zoom-src="images/1000000000000276000003311030468E.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000276000003311030468E.png" width="315" height="409" style="display:inline-block; margin:4px;width:8.334cm;height:10.809cm;" class="odt-zoomable" data-zoom-src="images/1000000000000276000003311030468E.png" /></td></tr></table>
 
 <p><a id="deploiement-ejb1"></a></p>
 <h2 id="47-deploiement-de-lejb-de-la-couche-dao-avec-netbeans">4.7. Déploiement de l&#x27;Ejb de la couche [dao] avec Netbeans</h2>
 <p>Netbeans permet de déployer de façon simple sur le serveur Glassfish l&#x27;Ejb créé précédemment.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006740000019183F63789.png" style="display:inline-block; margin:4px;width:17.997cm;height:4.369cm;" class="odt-zoomable" data-zoom-src="images/10000000000006740000019183F63789.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006740000019183F63789.png" width="680" height="165" style="display:inline-block; margin:4px;width:17.997cm;height:4.369cm;" class="odt-zoomable" data-zoom-src="images/10000000000006740000019183F63789.png" /></td></tr></table>
 
 <ul>
   <li>dans les propriétés du projet Ejb, vérifier les options d&#x27;exécution [1].
@@ -2414,7 +2414,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000069C000001ECA66F32F7.png" style="display:inline-block; margin:4px;width:17.997cm;height:5.232cm;" class="odt-zoomable" data-zoom-src="images/100000000000069C000001ECA66F32F7.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000069C000001ECA66F32F7.png" width="680" height="198" style="display:inline-block; margin:4px;width:17.997cm;height:5.232cm;" class="odt-zoomable" data-zoom-src="images/100000000000069C000001ECA66F32F7.png" /></td></tr></table>
 
 <ul>
   <li>en [5], le serveur Glassfish une fois lancé. Il n&#x27;a pas encore de module Ejb.
@@ -2433,7 +2433,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000058A000001F767571EF5.png" style="display:inline-block; margin:4px;width:17.997cm;height:6.384cm;" class="odt-zoomable" data-zoom-src="images/100000000000058A000001F767571EF5.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000058A000001F767571EF5.png" width="680" height="241" style="display:inline-block; margin:4px;width:17.997cm;height:6.384cm;" class="odt-zoomable" data-zoom-src="images/100000000000058A000001F767571EF5.png" /></td></tr></table>
 
 <ul>
   <li>en [9], on enlève l&#x27;Ejb déployé
@@ -2476,7 +2476,7 @@
 <p>La ligne 5 indique que la couche Jpa utilise une source de données JTA, c.a.d. gérée par le conteneur Ejb3, nommée &quot;jdbc/dbrdvmedecins&quot;.</p>
 <p>Nous avons vu au paragraphe <a href="#ressourcejdbcglassfish">4.5</a>, comment créer cette ressource JDBC à partir de Netbeans. Nous montrons ici comment le faire directement avec Glassfish. Nous suivons ici une procédure décrite au paragraphe 13.1.2, page  79 de [<a href="http://tahe.ftp-developpez.com/fichiers-archive/javaee.pdf"><strong>ref1</strong></a>].</p>
 <p>Nous commençons par supprimer la ressource afin de pouvoir la recréer. Nous le faisons à partir de Netbeans :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006580000017E44556C42.png" style="display:inline-block; margin:4px;width:17.997cm;height:4.232cm;" class="odt-zoomable" data-zoom-src="images/10000000000006580000017E44556C42.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006580000017E44556C42.png" width="680" height="160" style="display:inline-block; margin:4px;width:17.997cm;height:4.232cm;" class="odt-zoomable" data-zoom-src="images/10000000000006580000017E44556C42.png" /></td></tr></table>
 
 <ul>
   <li>en [1], les ressources JDBC du serveur Glassfish
@@ -2487,7 +2487,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000060E0000019B1B6925B0.png" style="display:inline-block; margin:4px;width:17.997cm;height:4.771cm;" class="odt-zoomable" data-zoom-src="images/100000000000060E0000019B1B6925B0.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000060E0000019B1B6925B0.png" width="680" height="180" style="display:inline-block; margin:4px;width:17.997cm;height:4.771cm;" class="odt-zoomable" data-zoom-src="images/100000000000060E0000019B1B6925B0.png" /></td></tr></table>
 
 <ul>
   <li>en [4], on supprime le pool de connexion. Cela va avoir pour effet de supprimer toutes les ressources JDBC qui l&#x27;utilisent, donc la ressource &quot;jdbc/dbrdvmedecins&quot;.
@@ -2497,7 +2497,7 @@
 </ul>
 
 <p>Maintenant, nous utilisons la console d&#x27;administration du serveur Glassfish pour créer la ressource JDBC et déployer l&#x27;Ejb.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000615000002C9FA9E1CAF.png" style="display:inline-block; margin:4px;width:17.997cm;height:8.241cm;" class="odt-zoomable" data-zoom-src="images/1000000000000615000002C9FA9E1CAF.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000615000002C9FA9E1CAF.png" width="680" height="311" style="display:inline-block; margin:4px;width:17.997cm;height:8.241cm;" class="odt-zoomable" data-zoom-src="images/1000000000000615000002C9FA9E1CAF.png" /></td></tr></table>
 
 <ul>
   <li>dans l&#x27;onglet [services] [1] de Netbeans, lancez le serveur Glassfish [2] puis accédez [3] à sa console d&#x27;administration
@@ -2506,7 +2506,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000073D000001DC667C5ABD.png" style="display:inline-block; margin:4px;width:17.997cm;height:4.621cm;" class="odt-zoomable" data-zoom-src="images/100000000000073D000001DC667C5ABD.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000073D000001DC667C5ABD.png" width="680" height="175" style="display:inline-block; margin:4px;width:17.997cm;height:4.621cm;" class="odt-zoomable" data-zoom-src="images/100000000000073D000001DC667C5ABD.png" /></td></tr></table>
 
 <ul>
   <li>en [5], sélectionnez la branche [Connection Pools] des ressources de Glassfish
@@ -2523,7 +2523,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000672000001DDD4AD689A.png" style="display:inline-block; margin:4px;width:17.997cm;height:5.203cm;" class="odt-zoomable" data-zoom-src="images/1000000000000672000001DDD4AD689A.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000672000001DDD4AD689A.png" width="680" height="197" style="display:inline-block; margin:4px;width:17.997cm;height:5.203cm;" class="odt-zoomable" data-zoom-src="images/1000000000000672000001DDD4AD689A.png" /></td></tr></table>
 
 <ul>
   <li>en [11], l&#x27;attribut &quot;Connection Validation Required&quot; fait qu&#x27;avant de donner une connexion, le pool vérifie qu&#x27;elle est opérationnelle. Si ce n&#x27;est pas le cas, il en crée une nouvelle. Ceci permet à une application de continuer à fonctionner après une coupure momentanée avec le SGBD. Pendant la coupure, aucune connexion n&#x27;est utilisable et des exceptions sont remontées au client. Lorsque la coupure est terminée, les clients qui continuent à demander des connexions les obtiennent de nouveau : grâce à l&#x27;attribut &quot;Connection Validation Required&quot; toutes les connexions du pool vont être recréées. Sans cet attribut, le pool constaterait que les connexions initiales ont été coupées mais ne chercherait pas à en recréer de nouvelles.
@@ -2534,7 +2534,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006F3000001C8AF0FE93D.png" style="display:inline-block; margin:4px;width:17.997cm;height:4.613cm;" class="odt-zoomable" data-zoom-src="images/10000000000006F3000001C8AF0FE93D.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006F3000001C8AF0FE93D.png" width="680" height="174" style="display:inline-block; margin:4px;width:17.997cm;height:4.613cm;" class="odt-zoomable" data-zoom-src="images/10000000000006F3000001C8AF0FE93D.png" /></td></tr></table>
 
 <ul>
   <li>en [14] et [15], précisez l&#x27;Url de la BD dont le pool gère les connexions
@@ -2549,7 +2549,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005160000022D380293C3.png" style="display:inline-block; margin:4px;width:17.224cm;height:7.37cm;" class="odt-zoomable" data-zoom-src="images/10000000000005160000022D380293C3.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005160000022D380293C3.png" width="651" height="279" style="display:inline-block; margin:4px;width:17.224cm;height:7.37cm;" class="odt-zoomable" data-zoom-src="images/10000000000005160000022D380293C3.png" /></td></tr></table>
 
 <ul>
   <li>en [21], le pool a été créé. On clique sur son lien.
@@ -2561,7 +2561,7 @@
 </ul>
 
 <p>Une fois le pool de connexions créé, on peut créer une ressource Jdbc :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E30000014EA1346FC6.png" style="display:inline-block; margin:4px;width:16.551cm;height:4.419cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E30000014EA1346FC6.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E30000014EA1346FC6.png" width="626" height="167" style="display:inline-block; margin:4px;width:16.551cm;height:4.419cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E30000014EA1346FC6.png" /></td></tr></table>
 
 <ul>
   <li>en [1], on sélectionne la branche [JDBC Resources] de l&#x27;arbre des objets du serveur
@@ -2572,7 +2572,7 @@
   </li>
 </ul>
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="w">    </span><span class="nt">&lt;jta-data-source&gt;</span>jdbc/dbrdvmedecins<span class="nt">&lt;/jta-data-source&gt;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>    &lt;jta-data-source&gt;jdbc/dbrdvmedecins&lt;/jta-data-source&gt;
 </code></pre></div>
 <ul>
   <li>en [4], on précise le pool de connexions que doit utiliser la nouvelle ressource JDBC : celui qu&#x27;on vient de créer
@@ -2581,7 +2581,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003D8000000EE6AD547D5.png" style="display:inline-block; margin:4px;width:13.018cm;height:3.149cm;" class="odt-zoomable" data-zoom-src="images/10000000000003D8000000EE6AD547D5.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003D8000000EE6AD547D5.png" width="492" height="119" style="display:inline-block; margin:4px;width:13.018cm;height:3.149cm;" class="odt-zoomable" data-zoom-src="images/10000000000003D8000000EE6AD547D5.png" /></td></tr></table>
 
 <ul>
   <li>en [6] la nouvelle ressource JDBC
@@ -2589,7 +2589,7 @@
 </ul>
 
 <p>Maintenant que la ressource JDBC est créée, on peut déployer l&#x27;archive jar de l&#x27;Ejb :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000507000001EB12A0D018.png" style="display:inline-block; margin:4px;width:17.027cm;height:6.496cm;" class="odt-zoomable" data-zoom-src="images/1000000000000507000001EB12A0D018.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000507000001EB12A0D018.png" width="644" height="246" style="display:inline-block; margin:4px;width:17.027cm;height:6.496cm;" class="odt-zoomable" data-zoom-src="images/1000000000000507000001EB12A0D018.png" /></td></tr></table>
 
 <ul>
   <li>en [1], sélectionnez la branche [Enterprise Applications]
@@ -2606,7 +2606,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000015D0000010E6C35AF92.png" style="display:inline-block; margin:4px;width:4.618cm;height:3.572cm;" class="odt-zoomable" data-zoom-src="images/100000000000015D0000010E6C35AF92.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000015D0000010E6C35AF92.png" width="175" height="135" style="display:inline-block; margin:4px;width:4.618cm;height:3.572cm;" class="odt-zoomable" data-zoom-src="images/100000000000015D0000010E6C35AF92.png" /></td></tr></table>
 
 <ul>
   <li>en [7], le module Ejb a été déployé. Il peut désormais être utilisé.
@@ -2615,7 +2615,7 @@
 
 <h2 id="49-tests-de-lejb-de-la-couche-dao">4.9. Tests de l&#x27;Ejb de la couche [dao]</h2>
 <p>Maintenant que l&#x27;Ejb de la couche [dao] de notre application a été déployé, nous pouvons le tester. Nous le ferons au moyen du client Java suivant :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001C5000001837EF57C70.png" style="display:inline-block; margin:4px;width:5.994cm;height:5.121cm;" class="odt-zoomable" data-zoom-src="images/10000000000001C5000001837EF57C70.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001C5000001837EF57C70.png" width="227" height="194" style="display:inline-block; margin:4px;width:5.994cm;height:5.121cm;" class="odt-zoomable" data-zoom-src="images/10000000000001C5000001837EF57C70.png" /></td></tr></table>
 
 <p>La classe [MainTestsDaoRemote] [1] est une classe de test JUnit 4. Les bibliothèques en [2] sont constituées d&#x27;une part :</p>
 <ul>
@@ -2816,13 +2816,13 @@
 </ul>
 
 <p>Si tout va bien, les tests doivent passer :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000010300000053855FAA4F.png" style="display:inline-block; margin:4px;width:4.8cm;height:1.54cm;" class="odt-zoomable" data-zoom-src="images/100000000000010300000053855FAA4F.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000010300000053855FAA4F.png" width="181" height="58" style="display:inline-block; margin:4px;width:4.8cm;height:1.54cm;" class="odt-zoomable" data-zoom-src="images/100000000000010300000053855FAA4F.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p>Maintenant que l&#x27;Ejb de la couche [dao] est opérationnel, on peut passer à son exposition publique via un service web.</p>
 <h2 id="410-le-service-web-de-la-couche-dao">4.10. Le service web de la couche [dao]</h2>
 <p>Pour une courte introduction à la notion de service web, on lira le paragraphe 14, page 111 de [<a href="http://tahe.ftp-developpez.com/fichiers-archive/javaee.pdf"><strong>ref1</strong></a>].</p>
 <p>Revenons à l&#x27;architecture du serveur de notre application client / serveur :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050300000123F6C914AF.png" style="display:inline-block; margin:4px;width:16.974cm;height:3.851cm;" class="odt-zoomable" data-zoom-src="images/100000000000050300000123F6C914AF.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050300000123F6C914AF.png" width="642" height="146" style="display:inline-block; margin:4px;width:16.974cm;height:3.851cm;" class="odt-zoomable" data-zoom-src="images/100000000000050300000123F6C914AF.png" /></td></tr></table>
 
 <p>Nous nous intéressons ci-dessus au service web de la couche [dao]. Ce service a pour seul rôle de rendre disponible l&#x27;interface de l&#x27;Ejb de la couche [dao] à des clients multi-plateformes capables de dialoguer avec un service web.</p>
 <p>Rappelons qu&#x27;il y a deux façons d&#x27;implémenter un service web :</p>
@@ -2831,14 +2831,14 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CD000000B63425D0A8.png" style="display:inline-block; margin:4px;width:16.26cm;height:2.408cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CD000000B63425D0A8.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CD000000B63425D0A8.png" width="615" height="91" style="display:inline-block; margin:4px;width:16.26cm;height:2.408cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CD000000B63425D0A8.png" /></td></tr></table>
 
 <ul>
   <li>par un Ejb annoté <b>@WebService</b> qui s&#x27;exécute dans un conteneur Ejb
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D0000000AB84F51BEF.png" style="display:inline-block; margin:4px;width:16.298cm;height:2.263cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D0000000AB84F51BEF.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D0000000AB84F51BEF.png" width="616" height="86" style="display:inline-block; margin:4px;width:16.298cm;height:2.263cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D0000000AB84F51BEF.png" /></td></tr></table>
 
 <p>Nous utilisons ici la première solution. Dans l&#x27;IDE Netbeans, il nous faut construire un projet d&#x27;entreprise avec deux modules :</p>
 <ul>
@@ -2852,14 +2852,14 @@
 <p><a id="serviceweb-1"></a></p>
 <h3 id="4101-projet-netbeans-version-1">4.10.1. Projet Netbeans - Version 1</h3>
 <p>Nous construisons tout d&#x27;abord un projet Netbeans de type &quot;Web Application&quot; :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000480000000EA511087E9.png" style="display:inline-block; margin:4px;width:15.24cm;height:3.096cm;" class="odt-zoomable" data-zoom-src="images/1000000000000480000000EA511087E9.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000480000000EA511087E9.png" width="576" height="117" style="display:inline-block; margin:4px;width:15.24cm;height:3.096cm;" class="odt-zoomable" data-zoom-src="images/1000000000000480000000EA511087E9.png" /></td></tr></table>
 
 <ul>
   <li>en [1], on crée un nouveau projet dans la catégorie &quot;Java Web&quot; [2] de type &quot;Web Application&quot; [3].
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CD00000128B9ECD5FB.png" style="display:inline-block; margin:4px;width:16.26cm;height:3.916cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CD00000128B9ECD5FB.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CD00000128B9ECD5FB.png" width="615" height="148" style="display:inline-block; margin:4px;width:16.26cm;height:3.916cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CD00000128B9ECD5FB.png" /></td></tr></table>
 
 <ul>
   <li>en [4], on donne un nom au projet et en [5] on précise le dossier dans lequel il doit être généré
@@ -2872,7 +2872,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000046D0000014B11B2ECA1.png" style="display:inline-block; margin:4px;width:14.99cm;height:4.38cm;" class="odt-zoomable" data-zoom-src="images/100000000000046D0000014B11B2ECA1.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000046D0000014B11B2ECA1.png" width="567" height="166" style="display:inline-block; margin:4px;width:14.99cm;height:4.38cm;" class="odt-zoomable" data-zoom-src="images/100000000000046D0000014B11B2ECA1.png" /></td></tr></table>
 
 <ul>
   <li>en [9], le projet généré. Le service web que nous construisons va utiliser l&#x27;EJB du projet précédent [10]. Aussi a-t-il besoin de référencer le .jar du module Ejb [10].
@@ -2884,14 +2884,14 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003630000013193C56A8F.png" style="display:inline-block; margin:4px;width:11.471cm;height:4.036cm;" class="odt-zoomable" data-zoom-src="images/10000000000003630000013193C56A8F.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003630000013193C56A8F.png" width="434" height="153" style="display:inline-block; margin:4px;width:11.471cm;height:4.036cm;" class="odt-zoomable" data-zoom-src="images/10000000000003630000013193C56A8F.png" /></td></tr></table>
 
 <ul>
   <li>en [13], on sélectionne le dossier du module Ejb dans le système de fichiers et on valide.
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000047D0000009DB6C1361E.png" style="display:inline-block; margin:4px;width:15.201cm;height:2.078cm;" class="odt-zoomable" data-zoom-src="images/100000000000047D0000009DB6C1361E.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000047D0000009DB6C1361E.png" width="575" height="79" style="display:inline-block; margin:4px;width:15.201cm;height:2.078cm;" class="odt-zoomable" data-zoom-src="images/100000000000047D0000009DB6C1361E.png" /></td></tr></table>
 
 <ul>
   <li>en [14], le module Ejb a été ajouté aux bibliothèques du projet web.
@@ -3114,11 +3114,11 @@
 </ul>
 
 <p>La création de ce service web est reflétée par une nouvelle branche dans le projet Netbeans :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001AD000001B744D7078E.png" style="display:inline-block; margin:4px;width:5.676cm;height:5.808cm;" class="odt-zoomable" data-zoom-src="images/10000000000001AD000001B744D7078E.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001AD000001B744D7078E.png" width="215" height="220" style="display:inline-block; margin:4px;width:5.676cm;height:5.808cm;" class="odt-zoomable" data-zoom-src="images/10000000000001AD000001B744D7078E.png" /></td></tr></table>
 
 <p>On voit en [1] le service web WsDaoJpa et en [2] les méthodes qu&#x27;il expose aux clients distants.</p>
 <p>Rappelons l&#x27;architecture du service web en construction :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CD000000B9E7B40AC9.png" style="display:inline-block; margin:4px;width:16.26cm;height:2.448cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CD000000B9E7B40AC9.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CD000000B9E7B40AC9.png" width="615" height="93" style="display:inline-block; margin:4px;width:16.26cm;height:2.448cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CD000000B9E7B40AC9.png" /></td></tr></table>
 
 <p>Les composantes du service web que nous allons déployer sont :</p>
 <ul>
@@ -3129,10 +3129,10 @@
 </ul>
 
 <p>Pour les déployer ensemble, il faut rassembler les deux modules dans un projet Netbeans dit &quot;d&#x27;entreprise&quot; :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A3000000D6745EF75F.png" style="display:inline-block; margin:4px;width:15.704cm;height:2.831cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A3000000D6745EF75F.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A3000000D6745EF75F.png" width="594" height="107" style="display:inline-block; margin:4px;width:15.704cm;height:2.831cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A3000000D6745EF75F.png" /></td></tr></table>
 
 <p>En [1] on crée un nouveau projet d&#x27;entreprise [2, 3].</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A1000001624D4F14B5.png" style="display:inline-block; margin:4px;width:15.677cm;height:4.683cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A1000001624D4F14B5.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A1000001624D4F14B5.png" width="593" height="177" style="display:inline-block; margin:4px;width:15.677cm;height:4.683cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A1000001624D4F14B5.png" /></td></tr></table>
 
 <ul>
   <li>en [4,5], on donne un nom au projet et on fixe son dossier de création
@@ -3143,14 +3143,14 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001E4000000D4F7DD5230.png" style="display:inline-block; margin:4px;width:6.403cm;height:2.805cm;" class="odt-zoomable" data-zoom-src="images/10000000000001E4000000D4F7DD5230.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001E4000000D4F7DD5230.png" width="242" height="106" style="display:inline-block; margin:4px;width:6.403cm;height:2.805cm;" class="odt-zoomable" data-zoom-src="images/10000000000001E4000000D4F7DD5230.png" /></td></tr></table>
 
 <ul>
   <li>en [8], l&#x27;application d&#x27;entreprise nouvellement créée.
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000524000000D764B59F61.png" style="display:inline-block; margin:4px;width:17.41cm;height:2.845cm;" class="odt-zoomable" data-zoom-src="images/1000000000000524000000D764B59F61.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000524000000D764B59F61.png" width="658" height="108" style="display:inline-block; margin:4px;width:17.41cm;height:2.845cm;" class="odt-zoomable" data-zoom-src="images/1000000000000524000000D764B59F61.png" /></td></tr></table>
 
 <ul>
   <li>en [9], cliquer droit sur [Java EE Modules] et ajouter un nouveau module
@@ -3162,7 +3162,7 @@
 </ul>
 
 <p>Il nous reste à déployer cette application d&#x27;entreprise sur le serveur Glassfish. Pour la suite, le SGBD MySQL doit être lancé afin que la source de données JDBC &quot;jdbc/dbrdvmedecins&quot; utilisée par le module Ejb soit accessible.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A80000017A3597D2AA.png" style="display:inline-block; margin:4px;width:15.769cm;height:5.001cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A80000017A3597D2AA.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A80000017A3597D2AA.png" width="596" height="189" style="display:inline-block; margin:4px;width:15.769cm;height:5.001cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A80000017A3597D2AA.png" /></td></tr></table>
 
 <ul>
   <li>en [1], on lance le serveur Glassfish
@@ -3173,7 +3173,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000250000000CFC4833D1F.png" style="display:inline-block; margin:4px;width:7.832cm;height:2.739cm;" class="odt-zoomable" data-zoom-src="images/1000000000000250000000CFC4833D1F.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000250000000CFC4833D1F.png" width="296" height="104" style="display:inline-block; margin:4px;width:7.832cm;height:2.739cm;" class="odt-zoomable" data-zoom-src="images/1000000000000250000000CFC4833D1F.png" /></td></tr></table>
 
 <ul>
   <li>en [4], elle est déployée. On voit qu&#x27;elle contient les deux modules : Web et Ejb.
@@ -3183,7 +3183,7 @@
 <h3 id="4102-projet-netbeans-version-2">4.10.2. Projet Netbeans - version 2</h3>
 <p>Nous montrons maintenant comment déployer le service web lorsqu&#x27;on ne dispose pas du code source du module Ejb mais seulement son archive .jar.</p>
 <p>Le nouveau projet Netbeans du service web sera le suivant :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001D20000014DF9F1B19C.png" style="display:inline-block; margin:4px;width:6.165cm;height:4.406cm;" class="odt-zoomable" data-zoom-src="images/10000000000001D20000014DF9F1B19C.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001D20000014DF9F1B19C.png" width="233" height="167" style="display:inline-block; margin:4px;width:6.165cm;height:4.406cm;" class="odt-zoomable" data-zoom-src="images/10000000000001D20000014DF9F1B19C.png" /></td></tr></table>
 
 <p>Les éléments notables du projet sont les suivants :</p>
 <ul>
@@ -3196,7 +3196,7 @@
 </ul>
 
 <p>Nous construisons ensuite le projet d&#x27;entreprise nécessaire au déploiement du service web :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000454000000D4BE39F210.png" style="display:inline-block; margin:4px;width:14.658cm;height:2.805cm;" class="odt-zoomable" data-zoom-src="images/1000000000000454000000D4BE39F210.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000454000000D4BE39F210.png" width="554" height="106" style="display:inline-block; margin:4px;width:14.658cm;height:2.805cm;" class="odt-zoomable" data-zoom-src="images/1000000000000454000000D4BE39F210.png" /></td></tr></table>
 
 <ul>
   <li>[1], on crée une application d&#x27;entreprise [ea-rdvmedecins], au départ sans aucun module.
@@ -3208,7 +3208,7 @@
 </ul>
 
 <p>Telle quelle, l&#x27;application d&#x27;entreprise [ea-rdvmedecins] ne peut pas être déployée sur le serveur Glassfish à partir de Netbeans. On obtient une erreur. Il faut alors déployer à la main l&#x27;archive <strong>ear</strong> de l&#x27;application [ea-rdvmedecins] :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050E00000159924B7363.png" style="display:inline-block; margin:4px;width:17.119cm;height:4.565cm;" class="odt-zoomable" data-zoom-src="images/100000000000050E00000159924B7363.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050E00000159924B7363.png" width="647" height="173" style="display:inline-block; margin:4px;width:17.119cm;height:4.565cm;" class="odt-zoomable" data-zoom-src="images/100000000000050E00000159924B7363.png" /></td></tr></table>
 
 <ul>
   <li>l&#x27;archive [ea-rdvmedecins.ear] est trouvée dans le dossier [dist] [2] de l&#x27;onglet [Files] de Netbeans.
@@ -3227,7 +3227,7 @@
 
 <p>Pour déployer l&#x27;archive [ea-rdvmedecins.ear] de l&#x27;application d&#x27;entreprise, nous procédons comme il a été montré lors du déploiement de l&#x27;archive de l&#x27;Ejb [serveur-ejb-dao-jpa-hibernate.jar] au paragraphe <a href="#creation-bd">4.2</a>. Nous utilisons de nouveau le client web d&#x27;administration du serveur Glassfish. Nous ne répétons pas des étapes déjà décrites.</p>
 <p>Tout d&#x27;abord, on commencera par &quot;décharger&quot; l&#x27;application d&#x27;entreprise déployée au paragraphe <a href="#serviceweb-1">4.10.1</a> :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A600000106D1948524.png" style="display:inline-block; margin:4px;width:15.743cm;height:3.466cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A600000106D1948524.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A600000106D1948524.png" width="595" height="131" style="display:inline-block; margin:4px;width:15.743cm;height:3.466cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A600000106D1948524.png" /></td></tr></table>
 
 <ul>
   <li>[1] : sélectionnez la branche [Enterprise Applications] du serveur Glassfish
@@ -3238,7 +3238,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000051B000001BDDAAA2E89.png" style="display:inline-block; margin:4px;width:17.291cm;height:5.888cm;" class="odt-zoomable" data-zoom-src="images/100000000000051B000001BDDAAA2E89.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000051B000001BDDAAA2E89.png" width="654" height="223" style="display:inline-block; margin:4px;width:17.291cm;height:5.888cm;" class="odt-zoomable" data-zoom-src="images/100000000000051B000001BDDAAA2E89.png" /></td></tr></table>
 
 <ul>
   <li>en [1], choisissez la branche [Enterprise Applications] du serveur Glassfish
@@ -3253,7 +3253,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000051C00000241EA80A758.png" style="display:inline-block; margin:4px;width:17.304cm;height:7.634cm;" class="odt-zoomable" data-zoom-src="images/100000000000051C00000241EA80A758.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000051C00000241EA80A758.png" width="654" height="289" style="display:inline-block; margin:4px;width:17.304cm;height:7.634cm;" class="odt-zoomable" data-zoom-src="images/100000000000051C00000241EA80A758.png" /></td></tr></table>
 
 <ul>
   <li>en [6], l&#x27;application a été déployée
@@ -3266,14 +3266,14 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003E4000001D698511AC9.png" style="display:inline-block; margin:4px;width:13.176cm;height:6.218cm;" class="odt-zoomable" data-zoom-src="images/10000000000003E4000001D698511AC9.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003E4000001D698511AC9.png" width="498" height="235" style="display:inline-block; margin:4px;width:13.176cm;height:6.218cm;" class="odt-zoomable" data-zoom-src="images/10000000000003E4000001D698511AC9.png" /></td></tr></table>
 
 <ul>
   <li>en [11], l&#x27;<a id="uri-service-web"></a>uri du service web à laquelle on a ajouté le paramètre <b>?tester</b>. Cette uri présente une page de test. Toutes les méthodes (<b>@WebMethod</b>) exposées par le service web sont affichées et peuvent être testées. Ici, on teste la méthode [13] qui demande la liste des clients.
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003A10000020FE4AC8114.png" style="display:inline-block; margin:4px;width:12.291cm;height:6.973cm;" class="odt-zoomable" data-zoom-src="images/10000000000003A10000020FE4AC8114.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003A10000020FE4AC8114.png" width="465" height="264" style="display:inline-block; margin:4px;width:12.291cm;height:6.973cm;" class="odt-zoomable" data-zoom-src="images/10000000000003A10000020FE4AC8114.png" /></td></tr></table>
 
 <ul>
   <li>en [14], nous ne présentons qu&#x27;une vue partielle de la page de réponse. Mais on peut voir que la méthode <b>getAllClients</b> a bien renvoyé la liste des clients. La copie d&#x27;écran nous montre qu&#x27;elle envoie sa réponse dans un format XML.
@@ -3281,7 +3281,7 @@
 </ul>
 
 <p>Un service web est entièrement décrit par un fichier XML appelé fichier WSDL :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000041F0000019150723F3F.png" style="display:inline-block; margin:4px;width:13.958cm;height:5.306cm;" class="odt-zoomable" data-zoom-src="images/100000000000041F0000019150723F3F.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000041F0000019150723F3F.png" width="528" height="201" style="display:inline-block; margin:4px;width:13.958cm;height:5.306cm;" class="odt-zoomable" data-zoom-src="images/100000000000041F0000019150723F3F.png" /></td></tr></table>
 
 <ul>
   <li>en [1] dans l&#x27;outil web d&#x27;administration du serveur Glassfish, sélectionnez le service web [WsDaoJpa]
@@ -3290,7 +3290,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003DD0000024ED66CA809.png" style="display:inline-block; margin:4px;width:13.085cm;height:7.805cm;" class="odt-zoomable" data-zoom-src="images/10000000000003DD0000024ED66CA809.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003DD0000024ED66CA809.png" width="495" height="295" style="display:inline-block; margin:4px;width:13.085cm;height:7.805cm;" class="odt-zoomable" data-zoom-src="images/10000000000003DD0000024ED66CA809.png" /></td></tr></table>
 
 <ul>
   <li>en [3] : l&#x27;uri du fichier WSDL. C&#x27;est une information importante à connaître. Elle est nécessaire pour configurer les clients de ce service web.
@@ -3301,7 +3301,7 @@
 
 <h3 id="4103-tests-junit-du-service-web">4.10.3. Tests JUnit du service web</h3>
 <p>Nous créons un projet Netbeans pour &quot;jouer&quot; les tests déjà joués avec un client Ejb avec cette fois-ci un client pour le service web dernièrement déployé. Nous suivons ici une démarche analogue à celle décrite au paragraphe 14.2.1, page 115 de [<a href="http://tahe.ftp-developpez.com/fichiers-archive/javaee.pdf"><strong>ref1</strong></a>].</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001970000015126DB8D79.png" style="display:inline-block; margin:4px;width:5.385cm;height:4.459cm;" class="odt-zoomable" data-zoom-src="images/10000000000001970000015126DB8D79.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001970000015126DB8D79.png" width="204" height="169" style="display:inline-block; margin:4px;width:5.385cm;height:4.459cm;" class="odt-zoomable" data-zoom-src="images/10000000000001970000015126DB8D79.png" /></td></tr></table>
 
 <ul>
   <li>en [1], un projet Java classique
@@ -3313,11 +3313,11 @@
 </ul>
 
 <p>Pour accéder au service web distant, il est nécessaire de générer des classes proxy :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004B00000011BEBE5E240.png" style="display:inline-block; margin:4px;width:15.875cm;height:3.745cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B00000011BEBE5E240.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004B00000011BEBE5E240.png" width="600" height="142" style="display:inline-block; margin:4px;width:15.875cm;height:3.745cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B00000011BEBE5E240.png" /></td></tr></table>
 
 <p>Dans le schéma ci-dessus, la couche [2] [C=Client] communique avec la couche [1] [S=Serveur]. Pour dialoguer avec la couche [S], le client [C] est amené à créer une connexion réseau avec la couche [S] et à dialoguer avec elle selon un protocole précis. Les connexions réseau sont des connexions TCP et le protocole de transport est HTTP. La couche [S] qui représente le service web est implémentée par une servlet Java exécutée par le serveur Glassfish. Nous n&#x27;avons pas écrit cette servlet. Sa génération est automatisée par Glassfish à partir des annotations <strong>@Webservice</strong> et <strong>@WebMethod</strong> de la classe [WsDaoJpa] que nous avons écrite. De même, nous allons automatiser la génération de la couche [C] du client. On appelle parfois la couche [C], une couche <strong>proxy</strong> du service web distant, le terme <em>proxy</em> désignant un élément intermédiaire dans une chaîne logicielle. Ici, le proxy C est l&#x27;intermédiaire entre le client que nous allons écrire et le service web que nous avons déployé.</p>
 <p>Avec Netbeans 6.5, le proxy C peut être généré de la façon suivante (pour la suite, il faut que le service web soit actif sur le serveur Glassfish) :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050B0000020BB32D6375.png" style="display:inline-block; margin:4px;width:17.08cm;height:6.92cm;" class="odt-zoomable" data-zoom-src="images/100000000000050B0000020BB32D6375.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050B0000020BB32D6375.png" width="646" height="262" style="display:inline-block; margin:4px;width:17.08cm;height:6.92cm;" class="odt-zoomable" data-zoom-src="images/100000000000050B0000020BB32D6375.png" /></td></tr></table>
 
 <ul>
   <li>en [1], ajouter un nouvel élément au projet Java
@@ -3328,7 +3328,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F800000217381E2EFA.png" style="display:inline-block; margin:4px;width:16.828cm;height:7.078cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F800000217381E2EFA.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F800000217381E2EFA.png" width="636" height="268" style="display:inline-block; margin:4px;width:16.828cm;height:7.078cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F800000217381E2EFA.png" /></td></tr></table>
 
 <ul>
   <li>en [4], fournir l&#x27;uri du fichier WSDL du service web. Cette uri a été présentée au paragraphe <a href="#uri-service-web">4.10.2</a>.
@@ -3339,7 +3339,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CE0000019773B57BD4.png" style="display:inline-block; margin:4px;width:16.272cm;height:5.385cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CE0000019773B57BD4.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CE0000019773B57BD4.png" width="615" height="204" style="display:inline-block; margin:4px;width:16.272cm;height:5.385cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CE0000019773B57BD4.png" /></td></tr></table>
 
 <ul>
   <li>dans l&#x27;onglet [Files] [7], des codes sources Java ont été rajoutés [8]. Ils correspondent au proxy C généré.
@@ -3350,7 +3350,7 @@
 
 <p>Pour le client Java que nous sommes en train de construire, le proxy C généré sert d&#x27;intermédiaire. Pour accéder à la méthode M du service web distant, le client Java appelle la méthode M du proxy C. Le client Java appelle ainsi des méthodes locales (exécutées dans la même Jvm) et de façon transparente pour lui, ces appels locaux sont traduits en appels distants.</p>
 <p>Il nous reste à savoir appeler les méthodes M du proxy C. Revenons à notre classe de test JUnit :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000017D000001291F2788E8.png" style="display:inline-block; margin:4px;width:5.041cm;height:3.93cm;" class="odt-zoomable" data-zoom-src="images/100000000000017D000001291F2788E8.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000017D000001291F2788E8.png" width="191" height="149" style="display:inline-block; margin:4px;width:5.041cm;height:3.93cm;" class="odt-zoomable" data-zoom-src="images/100000000000017D000001291F2788E8.png" /></td></tr></table>
 
 <p>En [1], la classe de test [MainTestsDaoRemote] est celle déjà utilisée lors du test de l&#x27;Ejb de la couche [dao] :</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-24-1"> 1</a></span>
@@ -3393,7 +3393,7 @@
 </ul>
 
 <p>A ce stade, le projet présente des erreurs car la méthode de test [test1] utilise les entités [Client], [Medecin], [Creneau], [Rv] qui ne sont plus dans les mêmes packages qu&#x27;auparavant. Elles sont dans le package du proxy C généré. On supprime les instructions <em>import</em> concernées et on les régénère par l&#x27;opération <em>Fix Imports</em>.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000044100000231F8932D72.png" style="display:inline-block; margin:4px;width:14.407cm;height:7.422cm;" class="odt-zoomable" data-zoom-src="images/100000000000044100000231F8932D72.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000044100000231F8932D72.png" width="545" height="281" style="display:inline-block; margin:4px;width:14.407cm;height:7.422cm;" class="odt-zoomable" data-zoom-src="images/100000000000044100000231F8932D72.png" /></td></tr></table>
 
 <p>Revenons au code de la classe de test [MainTestsDaoRemote] :</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-25-1"> 1</a></span>
@@ -3419,7 +3419,7 @@
 <a id="__codelineno-25-11" name="__codelineno-25-11"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <p>La méthode [init] de la ligne 10 doit initialiser la référence de la couche [dao] de la ligne 7. Il nous faut savoir comment utiliser le proxy C généré, dans notre code. Netbeans nous aide dans cette démarche.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000053000000197768C4773.png" style="display:inline-block; margin:4px;width:17.568cm;height:5.385cm;" class="odt-zoomable" data-zoom-src="images/100000000000053000000197768C4773.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000053000000197768C4773.png" width="664" height="204" style="display:inline-block; margin:4px;width:17.568cm;height:5.385cm;" class="odt-zoomable" data-zoom-src="images/100000000000053000000197768C4773.png" /></td></tr></table>
 
 <ul>
   <li>sélectionner en [1] la méthode [getAllClients] du service web et avec la souris, puis tirer cette méthode pour aller la déposer au sein de la méthode [init] de la classe de test.
@@ -3521,7 +3521,7 @@
 <a id="__codelineno-28-30" name="__codelineno-28-30"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <p>Nous sommes désormais prêts pour les tests :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003FD0000014357C20959.png" style="display:inline-block; margin:4px;width:13.508cm;height:4.274cm;" class="odt-zoomable" data-zoom-src="images/10000000000003FD0000014357C20959.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003FD0000014357C20959.png" width="511" height="162" style="display:inline-block; margin:4px;width:13.508cm;height:4.274cm;" class="odt-zoomable" data-zoom-src="images/10000000000003FD0000014357C20959.png" /></td></tr></table>
 
 <p>En [1], le test JUnit est exécuté. En [2], il est réussi. Si on regarde les affichages sur la console Netbeans, on trouve des lignes comme les suivantes :</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>Liste des clients :
@@ -3566,13 +3566,14 @@
     <div class="md-footer-meta__inner">
 
       <div>
-        <a href="https://tahe.developpez.com" target="_blank">
-          https://tahe.developpez.com
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
         </a>
         <br>
-        Ce cours-tutoriel écrit par <strong>Serge Tahé</strong> est mis à disposition du public selon les termes de la
-        <em>Licence Creative Commons Attribution – Pas d’Utilisation Commerciale –
-        Partage dans les Mêmes Conditions 3.0 non transposé</em>.
+        Ce cours-tutoriel rédigé par <strong>Serge Tahé</strong> est mis à la disposition du public selon les termes de la
+        <em>Licence Creative Commons Attribution – Pas d'utilisation commerciale –
+        Partage dans les mêmes conditions 3.0 non modifiée</em>.
+
       </div>
 
     </div>

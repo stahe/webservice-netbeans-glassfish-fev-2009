@@ -141,9 +141,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer au mode sombre"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer en mode sombre"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Passer au mode sombre" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Passer en mode sombre" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -151,9 +151,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer au mode clair"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer en mode clair"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Passer au mode clair" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Passer en mode clair" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -585,13 +585,13 @@
 <h1 id="5-clients-net-du-service-j2ee-des-rendez-vous">5. Clients .NET du service J2EE des rendez-vous</h1>
 <h2 id="51-un-client-c-2008">5.1. Un client C# 2008</h2>
 <p>Nous supposons désormais que le service web précédent est disponible et actif. Un service web est utilisable par des clients qui peuvent être écrits en différents langages. Nous nous proposons ici d&#x27;écrire un client console C# pour afficher la liste des médecins.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000056900000114A2B5166B.png" style="display:inline-block; margin:4px;width:17.997cm;height:3.586cm;" class="odt-zoomable" data-zoom-src="images/100000000000056900000114A2B5166B.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000056900000114A2B5166B.png" width="680" height="136" style="display:inline-block; margin:4px;width:17.997cm;height:3.586cm;" class="odt-zoomable" data-zoom-src="images/100000000000056900000114A2B5166B.png" /></td></tr></table>
 
 <p>Commençons par créer le projet C# :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004BC0000018B0C755C28.png" style="display:inline-block; margin:4px;width:16.034cm;height:5.226cm;" class="odt-zoomable" data-zoom-src="images/10000000000004BC0000018B0C755C28.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004BC0000018B0C755C28.png" width="606" height="198" style="display:inline-block; margin:4px;width:16.034cm;height:5.226cm;" class="odt-zoomable" data-zoom-src="images/10000000000004BC0000018B0C755C28.png" /></td></tr></table>
 
 <p>On crée une application console [1] appelée [ListeDesMedecins] [2]. En [3], on crée une référence sur un service web. Cet outil est similaire à celui utilisé dans Netbeans : il crée un proxy local du service web distant.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000038200000265A6BAF937.png" style="display:inline-block; margin:4px;width:11.88cm;height:8.11cm;" class="odt-zoomable" data-zoom-src="images/100000000000038200000265A6BAF937.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000038200000265A6BAF937.png" width="449" height="307" style="display:inline-block; margin:4px;width:11.88cm;height:8.11cm;" class="odt-zoomable" data-zoom-src="images/100000000000038200000265A6BAF937.png" /></td></tr></table>
 
 <ul>
   <li>en [1], on indique l&#x27;uri du fichier WSDL du service web (cf paragraphe <a href="le-service-web-j2ee-des-rendez-vous.html#uri-service-web">4.10.2</a>).
@@ -606,7 +606,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002BD000001294B73A821.png" style="display:inline-block; margin:4px;width:9.275cm;height:3.93cm;" class="odt-zoomable" data-zoom-src="images/10000000000002BD000001294B73A821.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002BD000001294B73A821.png" width="351" height="149" style="display:inline-block; margin:4px;width:9.275cm;height:3.93cm;" class="odt-zoomable" data-zoom-src="images/10000000000002BD000001294B73A821.png" /></td></tr></table>
 
 <ul>
   <li>en [1], la référence web que nous venons de créer. Double-cliquons dessus.
@@ -619,7 +619,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050B00000117DAF64751.png" style="display:inline-block; margin:4px;width:17.08cm;height:3.692cm;" class="odt-zoomable" data-zoom-src="images/100000000000050B00000117DAF64751.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050B00000117DAF64751.png" width="646" height="140" style="display:inline-block; margin:4px;width:17.08cm;height:3.692cm;" class="odt-zoomable" data-zoom-src="images/100000000000050B00000117DAF64751.png" /></td></tr></table>
 
 <ul>
   <li>en [5], [WsDaoJpaClient] est la classe implémentant localement les méthodes du service web distant.
@@ -629,23 +629,23 @@
 </ul>
 
 <p>Examinons le code des entités générées :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000016C000000BFAEAAB231.png" style="display:inline-block; margin:4px;width:4.815cm;height:2.528cm;" class="odt-zoomable" data-zoom-src="images/100000000000016C000000BFAEAAB231.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000016C000000BFAEAAB231.png" width="182" height="96" style="display:inline-block; margin:4px;width:4.815cm;height:2.528cm;" class="odt-zoomable" data-zoom-src="images/100000000000016C000000BFAEAAB231.png" /></td></tr></table>
 
 <p>En [1] ci-dessus, on demande à voir le code de la classe [client] :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">...</span>
-<span class="odt-code-line">    <span style="color:#0000ff">public</span> <span style="color:#0000ff">partial</span> <span style="color:#0000ff">class</span> <a id="client-csharp-classe-client"></a><span style="color:#2b91af">client</span> : <span style="color:#2b91af">personne</span> {</span>
-<span class="odt-code-line">    }</span>
-<span class="odt-code-line">    </span>
-<span class="odt-code-line">....</span>
-<span class="odt-code-line">    <span style="color:#0000ff">public</span> <span style="color:#0000ff">partial</span> <span style="color:#0000ff">class</span> <span style="color:#2b91af">personne</span> : <span style="color:#0000ff">object</span>, System.ComponentModel.<span style="color:#2b91af">INotifyPropertyChanged</span> {</span>
-<span class="odt-code-line">    ...</span>
-<span class="odt-code-line">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">long</span> id {</span>
-<span class="odt-code-line">       ...</span>
-<span class="odt-code-line">        }</span>
-<span class="odt-code-line">        </span>
-<span class="odt-code-line">...</span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">public</span> <span style="color:#0000ff">partial</span> <span style="color:#0000ff">class</span> <a id="client-csharp-classe-client"></a><span style="color:#2b91af">client</span> : <span style="color:#2b91af">personne</span> {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">....</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">public</span> <span style="color:#0000ff">partial</span> <span style="color:#0000ff">class</span> <span style="color:#2b91af">personne</span> : <span style="color:#0000ff">object</span>, System.ComponentModel.<span style="color:#2b91af">INotifyPropertyChanged</span> {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ...</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">long</span> id {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">       ...</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <p>Ci-dessus, nous n&#x27;avons gardé que le code nécessaire à notre étude.</p>
@@ -658,37 +658,37 @@
 
 <p>Ce qu&#x27;on remarque, c&#x27;est que le code généré ne respecte pas les normes de codage habituelles de C#. Les noms des classes et des propriétés publiques devraient commencer par une majuscule.</p>
 <p>Revenons à notre application C# :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000049E000001115CB50FC5.png" style="display:inline-block; margin:4px;width:15.637cm;height:3.612cm;" class="odt-zoomable" data-zoom-src="images/100000000000049E000001115CB50FC5.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000049E000001115CB50FC5.png" width="591" height="137" style="display:inline-block; margin:4px;width:15.637cm;height:3.612cm;" class="odt-zoomable" data-zoom-src="images/100000000000049E000001115CB50FC5.png" /></td></tr></table>
 
 <p>[Program.cs] [1] est la classe de test. Son code est le suivant :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
-<span class="odt-code-line"><span style="color:#0000ff">using</span> System;</span>
-<span class="odt-code-line"><span style="color:#0000ff">using</span> ListeDesMedecins.Ws.RdvMedecins;</span>
-<span class="odt-code-line"><span style="color:#0000ff">using</span> <span style="color:#2b91af">Client</span> = ListeDesMedecins.Ws.RdvMedecins.<span style="color:#2b91af">client</span>;</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#0000ff">namespace</span> ListeDesMedecins {</span>
-<span class="odt-code-line">    <span style="color:#0000ff">class</span> <span style="color:#2b91af">Program</span> {</span>
-<span class="odt-code-line">        <span style="color:#0000ff">static</span> <span style="color:#0000ff">void</span> Main(<span style="color:#0000ff">string</span>[] args) {</span>
-<span class="odt-code-line">            <span style="color:#0000ff">try</span> {</span>
-<span class="odt-code-line">                <span style="color:#008000">// instanciation couche [dao] du client</span></span>
-<span class="odt-code-line">                <span style="color:#2b91af">WsDaoJpaClient</span> dao = <span style="color:#0000ff">new</span> <span style="color:#2b91af">WsDaoJpaClient</span>();</span>
-<span class="odt-code-line">                <span style="color:#008000">// liste des médecins</span></span>
-<span class="odt-code-line">                <span style="color:#0000ff">foreach</span> (<span style="color:#2b91af">Client</span> client <span style="color:#0000ff">in</span> dao.getAllClients()) {</span>
-<span class="odt-code-line">                    <span style="color:#2b91af">Console</span>.WriteLine(<span style="color:#2b91af">String</span>.Format(<span style="color:#a31515">&quot;{0} {1} {2}&quot;</span>, client.titre, client.prenom, client.nom));</span>
-<span class="odt-code-line">                }</span>
-<span class="odt-code-line">            } <span style="color:#0000ff">catch</span> (<span style="color:#2b91af">Exception</span> e) {</span>
-<span class="odt-code-line">                <span style="color:#2b91af">Console</span>.WriteLine(e);</span>
-<span class="odt-code-line">            }</span>
-<span class="odt-code-line">        }</span>
-<span class="odt-code-line">    }</span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span> System;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span> ListeDesMedecins.Ws.RdvMedecins;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span> <span style="color:#2b91af">Client</span> = ListeDesMedecins.Ws.RdvMedecins.<span style="color:#2b91af">client</span>;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span> ListeDesMedecins {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">class</span> <span style="color:#2b91af">Program</span> {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">static</span> <span style="color:#0000ff">void</span> Main(<span style="color:#0000ff">string</span>[] args) {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">try</span> {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                <span style="color:#008000">// instanciation couche [dao] du client</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                <span style="color:#2b91af">WsDaoJpaClient</span> dao = <span style="color:#0000ff">new</span> <span style="color:#2b91af">WsDaoJpaClient</span>();</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                <span style="color:#008000">// liste des médecins</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                <span style="color:#0000ff">foreach</span> (<span style="color:#2b91af">Client</span> client <span style="color:#0000ff">in</span> dao.getAllClients()) {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    <span style="color:#2b91af">Console</span>.WriteLine(<span style="color:#2b91af">String</span>.Format(<span style="color:#a31515">&quot;{0} {1} {2}&quot;</span>, client.titre, client.prenom, client.nom));</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            } <span style="color:#0000ff">catch</span> (<span style="color:#2b91af">Exception</span> e) {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                <span style="color:#2b91af">Console</span>.WriteLine(e);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <p>Ligne 12, la classe [Client] du proxy C est utilisée alors que nous venons de voir qu&#x27;elle s&#x27;appelait en réalité [client]. C&#x27;est la déclaration de la ligne 3 qui nous permet d&#x27;utiliser [Client] au lieu de [client]. Cela nous permet de respecter la norme de codage des noms de classe. Toujours ligne 12, la méthode [getAllClients] est utilisée parce c&#x27;est ainsi qu&#x27;elle s&#x27;appelle dans le proxy C. La norme de codage C# voudrait qu&#x27;elle s&#x27;appelle [GetAllClients].</p>
 <p>L&#x27;exécution du programme [1] précédent donne les résultats montrés en [2].</p>
 <h2 id="52-un-premier-client-aspnet-2008">5.2. Un premier client ASP.NET 2008</h2>
 <p>Nous écrivons maintenant un premier client ASP.NET / C# pour afficher la liste des clients.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000055D0000011B7771940E.png" style="display:inline-block; margin:4px;width:17.997cm;height:3.709cm;" class="odt-zoomable" data-zoom-src="images/100000000000055D0000011B7771940E.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000055D0000011B7771940E.png" width="680" height="140" style="display:inline-block; margin:4px;width:17.997cm;height:3.709cm;" class="odt-zoomable" data-zoom-src="images/100000000000055D0000011B7771940E.png" /></td></tr></table>
 
 <p>Dans cette architecture, il y a deux serveurs web :</p>
 <ul>
@@ -699,10 +699,10 @@
 </ul>
 
 <p>Nous allons créer le projet web du client ASP.NET avec la version Visual Web Express 2008 <strong>SP1</strong>. Le paragraphe suivant montre comment créer le même projet si on n&#x27;a pas la version <strong>SP1</strong> de Visual Web Express 2008.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004BF0000019C2B68DEC9.png" style="display:inline-block; margin:4px;width:16.074cm;height:5.45cm;" class="odt-zoomable" data-zoom-src="images/10000000000004BF0000019C2B68DEC9.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004BF0000019C2B68DEC9.png" width="608" height="206" style="display:inline-block; margin:4px;width:16.074cm;height:5.45cm;" class="odt-zoomable" data-zoom-src="images/10000000000004BF0000019C2B68DEC9.png" /></td></tr></table>
 
 <p>On crée une application <em>web</em> [1, 2, 3] appelée [ListeDesClients1] [4,5,6]. Le projet ainsi créé est visible en [7].</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000049F0000014D31DE65AB.png" style="display:inline-block; margin:4px;width:15.651cm;height:4.406cm;" class="odt-zoomable" data-zoom-src="images/100000000000049F0000014D31DE65AB.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000049F0000014D31DE65AB.png" width="592" height="167" style="display:inline-block; margin:4px;width:15.651cm;height:4.406cm;" class="odt-zoomable" data-zoom-src="images/100000000000049F0000014D31DE65AB.png" /></td></tr></table>
 
 <ul>
   <li>en [5], par un clic droit sur le nom du projet, on ajoute une référence de service web.
@@ -713,7 +713,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E80000018A19A3AF74.png" style="display:inline-block; margin:4px;width:16.616cm;height:5.212cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E80000018A19A3AF74.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E80000018A19A3AF74.png" width="628" height="197" style="display:inline-block; margin:4px;width:16.616cm;height:5.212cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E80000018A19A3AF74.png" /></td></tr></table>
 
 <ul>
   <li>en [8], le service web trouvé et en [9] les méthodes qu&#x27;il expose sont affichées.
@@ -725,7 +725,7 @@
 </ul>
 
 <p>Un double-clic sur la référence [Ws.Rdvmedecins] [12] affiche les classes et interfaces générées pour le proxy C :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000021500000317916F8A24.png" style="display:inline-block; margin:4px;width:7.052cm;height:10.465cm;" class="odt-zoomable" data-zoom-src="images/100000000000021500000317916F8A24.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000021500000317916F8A24.png" width="267" height="396" style="display:inline-block; margin:4px;width:7.052cm;height:10.465cm;" class="odt-zoomable" data-zoom-src="images/100000000000021500000317916F8A24.png" /></td></tr></table>
 
 <ul>
   <li>en [1], l&#x27;explorateur d&#x27;objets ouvert par le double-clic.
@@ -736,7 +736,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004C00000018D5C133C3A.png" style="display:inline-block; margin:4px;width:16.087cm;height:5.253cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C00000018D5C133C3A.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004C00000018D5C133C3A.png" width="608" height="199" style="display:inline-block; margin:4px;width:16.087cm;height:5.253cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C00000018D5C133C3A.png" /></td></tr></table>
 
 <ul>
   <li>en [4], [WsDaoJpaService] est la classe implémentant localement les méthodes du service web distant.
@@ -746,19 +746,19 @@
 </ul>
 
 <p>Examinons le code des entités générées :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000014600000137751A6735.png" style="display:inline-block; margin:4px;width:4.313cm;height:4.115cm;" class="odt-zoomable" data-zoom-src="images/100000000000014600000137751A6735.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000014600000137751A6735.png" width="163" height="156" style="display:inline-block; margin:4px;width:4.313cm;height:4.115cm;" class="odt-zoomable" data-zoom-src="images/100000000000014600000137751A6735.png" /></td></tr></table>
 
 <p>En [1] ci-dessus, on demande à voir le code de la classe [client] :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span style="color:#0000ff">public</span> <span style="color:#0000ff">partial</span> <span style="color:#0000ff">class</span> <span style="color:#2b91af">client</span> : <span style="color:#2b91af">personne</span> {</span>
-<span class="odt-code-line">    }</span>
-<span class="odt-code-line">    </span>
-<span class="odt-code-line">...</span>
-<span class="odt-code-line">    <span style="color:#0000ff">public</span> <span style="color:#0000ff">partial</span> <span style="color:#0000ff">class</span> <span style="color:#2b91af">personne</span> {</span>
-<span class="odt-code-line">  ...</span>
-<span class="odt-code-line">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">long</span> id {</span>
-<span class="odt-code-line">...</span>
-<span class="odt-code-line">        }</span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">public</span> <span style="color:#0000ff">partial</span> <span style="color:#0000ff">class</span> <span style="color:#2b91af">client</span> : <span style="color:#2b91af">personne</span> {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">public</span> <span style="color:#0000ff">partial</span> <span style="color:#0000ff">class</span> <span style="color:#2b91af">personne</span> {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  ...</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">public</span> <span style="color:#0000ff">long</span> id {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
 </code></pre></div>
 
 <p>Ci-dessus, nous n&#x27;avons gardé que le code nécessaire à notre étude.</p>
@@ -782,7 +782,7 @@
 </ul>
 
 <p>Nous pouvons écrire une page [Default.aspx] affichant la liste des clients. La page est la suivante :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001B60000021846837B0A.png" style="display:inline-block; margin:4px;width:5.794cm;height:7.091cm;" class="odt-zoomable" data-zoom-src="images/10000000000001B60000021846837B0A.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001B60000021846837B0A.png" width="219" height="268" style="display:inline-block; margin:4px;width:5.794cm;height:7.091cm;" class="odt-zoomable" data-zoom-src="images/10000000000001B60000021846837B0A.png" /></td></tr></table>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>N°</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Type</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Nom</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Rôle</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>1
@@ -803,75 +803,75 @@
 
 <p>Le code de présentation de cette page est comme suit :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
-<span class="odt-code-line">&lt;%<span style="color:#0000ff">@</span> <span style="color:#a31515">Page</span> <span style="color:#ff0000">Language</span><span style="color:#0000ff">=&quot;C#&quot;</span> <span style="color:#ff0000">AutoEventWireup</span><span style="color:#0000ff">=&quot;true&quot;</span> <span style="color:#ff0000">CodeBehind</span><span style="color:#0000ff">=&quot;Default.aspx.cs&quot;</span> <span style="color:#ff0000">Inherits</span><span style="color:#0000ff">=&quot;ListeDesClients1._Default&quot;</span> %&gt;</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">&lt;%<span style="color:#0000ff">@</span> <span style="color:#a31515">Import</span> <span style="color:#ff0000">Namespace</span><span style="color:#0000ff">=&quot;ListeDesClients1.Ws.RdvMedecins&quot;</span> %&gt;</span>
-<span class="odt-code-line"><span style="color:#0000ff">&lt;!</span><span style="color:#a31515">DOCTYPE</span> <span style="color:#ff0000">html</span> <span style="color:#ff0000">PUBLIC</span> <span style="color:#0000ff">&quot;-//W3C//DTD XHTML 1.1//EN&quot;</span> <span style="color:#0000ff">&quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">&lt;</span><span style="color:#a31515">html</span> <span style="color:#ff0000">xmlns</span><span style="color:#0000ff">=&quot;http://www.w3.org/1999/xhtml&quot;&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">&lt;</span><span style="color:#a31515">head</span> <span style="color:#ff0000">id</span><span style="color:#0000ff">=&quot;Head1&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span>
-<span class="odt-code-line">  <span style="color:#0000ff">&lt;</span><span style="color:#a31515">title</span><span style="color:#0000ff">&gt;</span>Liste des clients<span style="color:#0000ff">&lt;/</span><span style="color:#a31515">title</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">&lt;/</span><span style="color:#a31515">head</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">&lt;</span><span style="color:#a31515">body</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">  <span style="color:#0000ff">&lt;</span><span style="color:#a31515">form</span> <span style="color:#ff0000">id</span><span style="color:#0000ff">=&quot;form1&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span>
-<span class="odt-code-line">  <span style="color:#0000ff">&lt;</span><span style="color:#a31515">div</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">    <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">MultiView</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;Vues&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span>
-<span class="odt-code-line">      <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">View</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;VueClients&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span>
-<span class="odt-code-line">        Liste des clients :<span style="color:#0000ff">&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span>
-<span class="odt-code-line">        <span style="color:#0000ff">&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span>
-<span class="odt-code-line">        <span style="color:#0000ff">&lt;</span><span style="color:#a31515">ul</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">          <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">Repeater</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;RepeaterClients&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span>
-<span class="odt-code-line">            <span style="color:#0000ff">&lt;</span><span style="color:#a31515">ItemTemplate</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">              <span style="color:#0000ff">&lt;</span><span style="color:#a31515">li</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">                &lt;%<span style="color:#0000ff">#</span>(Container.DataItem <span style="color:#0000ff">as</span> <span style="color:#2b91af">client</span>).nom%&gt;,</span>
-<span class="odt-code-line">                &lt;%<span style="color:#0000ff">#</span>(Container.DataItem <span style="color:#0000ff">as</span> <span style="color:#2b91af">client</span>).prenom%&gt;</span>
-<span class="odt-code-line">              <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">li</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">            <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">ItemTemplate</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">          <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">Repeater</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">        <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">ul</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">      <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">View</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">      <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">View</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;VuesErreurs&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span>
-<span class="odt-code-line">        L&#x27;erreur suivante s&#x27;est produite :<span style="color:#0000ff">&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span>
-<span class="odt-code-line">        <span style="color:#0000ff">&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span>
-<span class="odt-code-line">        <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">Label</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;LabelErreur&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">Label</span><span style="color:#0000ff">&gt;&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">View</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">    <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">MultiView</span><span style="color:#0000ff">&gt;&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span>
-<span class="odt-code-line">  <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">div</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">  <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">form</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">&lt;/</span><span style="color:#a31515">body</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">&lt;/</span><span style="color:#a31515">html</span><span style="color:#0000ff">&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;%<span style="color:#0000ff">@</span> <span style="color:#a31515">Page</span> <span style="color:#ff0000">Language</span><span style="color:#0000ff">=&quot;C#&quot;</span> <span style="color:#ff0000">AutoEventWireup</span><span style="color:#0000ff">=&quot;true&quot;</span> <span style="color:#ff0000">CodeBehind</span><span style="color:#0000ff">=&quot;Default.aspx.cs&quot;</span> <span style="color:#ff0000">Inherits</span><span style="color:#0000ff">=&quot;ListeDesClients1._Default&quot;</span> %&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;%<span style="color:#0000ff">@</span> <span style="color:#a31515">Import</span> <span style="color:#ff0000">Namespace</span><span style="color:#0000ff">=&quot;ListeDesClients1.Ws.RdvMedecins&quot;</span> %&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;!</span><span style="color:#a31515">DOCTYPE</span> <span style="color:#ff0000">html</span> <span style="color:#ff0000">PUBLIC</span> <span style="color:#0000ff">&quot;-//W3C//DTD XHTML 1.1//EN&quot;</span> <span style="color:#0000ff">&quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#a31515">html</span> <span style="color:#ff0000">xmlns</span><span style="color:#0000ff">=&quot;http://www.w3.org/1999/xhtml&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#a31515">head</span> <span style="color:#ff0000">id</span><span style="color:#0000ff">=&quot;Head1&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">&lt;</span><span style="color:#a31515">title</span><span style="color:#0000ff">&gt;</span>Liste des clients<span style="color:#0000ff">&lt;/</span><span style="color:#a31515">title</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span><span style="color:#a31515">head</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#a31515">body</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">&lt;</span><span style="color:#a31515">form</span> <span style="color:#ff0000">id</span><span style="color:#0000ff">=&quot;form1&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">&lt;</span><span style="color:#a31515">div</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">MultiView</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;Vues&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">View</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;VueClients&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        Liste des clients :<span style="color:#0000ff">&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">&lt;</span><span style="color:#a31515">ul</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">          <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">Repeater</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;RepeaterClients&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">&lt;</span><span style="color:#a31515">ItemTemplate</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">              <span style="color:#0000ff">&lt;</span><span style="color:#a31515">li</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                &lt;%<span style="color:#0000ff">#</span>(Container.DataItem <span style="color:#0000ff">as</span> <span style="color:#2b91af">client</span>).nom%&gt;,</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                &lt;%<span style="color:#0000ff">#</span>(Container.DataItem <span style="color:#0000ff">as</span> <span style="color:#2b91af">client</span>).prenom%&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">              <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">li</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">ItemTemplate</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">          <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">Repeater</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">ul</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">View</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">View</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;VuesErreurs&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        L&#x27;erreur suivante s&#x27;est produite :<span style="color:#0000ff">&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">Label</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;LabelErreur&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">Label</span><span style="color:#0000ff">&gt;&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">View</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">MultiView</span><span style="color:#0000ff">&gt;&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">div</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">form</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span><span style="color:#a31515">body</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span><span style="color:#a31515">html</span><span style="color:#0000ff">&gt;</span></span></span>
 </code></pre></div>
 
 <p>On notera, ligne 3, la nécessité d&#x27;importer l&#x27;espace de noms [ListeDesClients1.Ws.RdvMedecins] du proxy C du service web afin que la classe [client] des lignes 20 et 21 soit accessible.</p>
 <p>Le code de contrôle [Default.aspx.cs] associé à la page de présentation [Default.aspx] est le suivant :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
-<span class="odt-code-line"><span style="color:#0000ff">using</span> System;</span>
-<span class="odt-code-line"><span style="color:#0000ff">using</span> ListeDesClients1.Ws.RdvMedecins;</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#0000ff">namespace</span> ListeDesClients1</span>
-<span class="odt-code-line">{</span>
-<span class="odt-code-line">  <span style="color:#0000ff">public</span> <span style="color:#0000ff">partial</span> <span style="color:#0000ff">class</span> <span style="color:#2b91af">_Default</span> : System.Web.UI.<span style="color:#2b91af">Page</span></span>
-<span class="odt-code-line">  {</span>
-<span class="odt-code-line">    <span style="color:#0000ff">protected</span> <span style="color:#0000ff">void</span> Page_Load(<span style="color:#0000ff">object</span> sender, <span style="color:#2b91af">EventArgs</span> e)</span>
-<span class="odt-code-line">    {</span>
-<span class="odt-code-line">      <span style="color:#0000ff">try</span></span>
-<span class="odt-code-line">      {</span>
-<span class="odt-code-line">        <span style="color:#008000">// instanciation proxy local de la couche [dao] distante</span></span>
-<span class="odt-code-line">        <span style="color:#2b91af">WsDaoJpaService</span> dao = <span style="color:#0000ff">new</span> <span style="color:#2b91af">WsDaoJpaService</span>();</span>
-<span class="odt-code-line">        <span style="color:#008000">// vue client</span></span>
-<span class="odt-code-line">        Vues.ActiveViewIndex = 0;</span>
-<span class="odt-code-line">        <span style="color:#008000">// initialisation vue client</span></span>
-<span class="odt-code-line">        RepeaterClients.DataSource = dao.getAllClients();</span>
-<span class="odt-code-line">        RepeaterClients.DataBind();</span>
-<span class="odt-code-line">      }</span>
-<span class="odt-code-line">      <span style="color:#0000ff">catch</span> (<span style="color:#2b91af">Exception</span> ex)</span>
-<span class="odt-code-line">      {</span>
-<span class="odt-code-line">        <span style="color:#008000">// vue erreurs</span></span>
-<span class="odt-code-line">        Vues.ActiveViewIndex = 1;</span>
-<span class="odt-code-line">        <span style="color:#008000">//initialisation vue erreurs</span></span>
-<span class="odt-code-line">        LabelErreur.Text = ex.ToString();</span>
-<span class="odt-code-line">      }</span>
-<span class="odt-code-line">    }</span>
-<span class="odt-code-line">  }</span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span> System;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span> ListeDesClients1.Ws.RdvMedecins;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span> ListeDesClients1</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">public</span> <span style="color:#0000ff">partial</span> <span style="color:#0000ff">class</span> <span style="color:#2b91af">_Default</span> : System.Web.UI.<span style="color:#2b91af">Page</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">protected</span> <span style="color:#0000ff">void</span> Page_Load(<span style="color:#0000ff">object</span> sender, <span style="color:#2b91af">EventArgs</span> e)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#0000ff">try</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#008000">// instanciation proxy local de la couche [dao] distante</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#2b91af">WsDaoJpaService</span> dao = <span style="color:#0000ff">new</span> <span style="color:#2b91af">WsDaoJpaService</span>();</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#008000">// vue client</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        Vues.ActiveViewIndex = 0;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#008000">// initialisation vue client</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        RepeaterClients.DataSource = dao.getAllClients();</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        RepeaterClients.DataBind();</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#0000ff">catch</span> (<span style="color:#2b91af">Exception</span> ex)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#008000">// vue erreurs</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        Vues.ActiveViewIndex = 1;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#008000">//initialisation vue erreurs</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        LabelErreur.Text = ex.ToString();</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -890,17 +890,17 @@
 </ul>
 
 <p>L&#x27;exécution du projet web donne le résultat suivant :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002530000013205F5D91C.png" style="display:inline-block; margin:4px;width:7.872cm;height:4.048cm;" class="odt-zoomable" data-zoom-src="images/10000000000002530000013205F5D91C.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002530000013205F5D91C.png" width="298" height="153" style="display:inline-block; margin:4px;width:7.872cm;height:4.048cm;" class="odt-zoomable" data-zoom-src="images/10000000000002530000013205F5D91C.png" /></td></tr></table>
 
 <h2 id="53-un-second-client-aspnet-2008">5.3. Un second client ASP.NET 2008</h2>
 <p>Nous écrivons maintenant un second client ASP.NET / C# avec cette fois-ci la version Visual Web Developer Express 2008 qui a précédé la version <strong>SP1</strong>.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000578000001198C29BB2E.png" style="display:inline-block; margin:4px;width:17.997cm;height:3.612cm;" class="odt-zoomable" data-zoom-src="images/1000000000000578000001198C29BB2E.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000578000001198C29BB2E.png" width="680" height="137" style="display:inline-block; margin:4px;width:17.997cm;height:3.612cm;" class="odt-zoomable" data-zoom-src="images/1000000000000578000001198C29BB2E.png" /></td></tr></table>
 
 <p>Créons le projet web du client .NET :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005070000019789034AB9.png" style="display:inline-block; margin:4px;width:17.027cm;height:5.385cm;" class="odt-zoomable" data-zoom-src="images/10000000000005070000019789034AB9.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005070000019789034AB9.png" width="644" height="204" style="display:inline-block; margin:4px;width:17.027cm;height:5.385cm;" class="odt-zoomable" data-zoom-src="images/10000000000005070000019789034AB9.png" /></td></tr></table>
 
 <p>On crée un site <em>web</em> [1, 2] appelée [ListeDesClients] [3].</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000046D00000151B465515F.png" style="display:inline-block; margin:4px;width:14.99cm;height:4.459cm;" class="odt-zoomable" data-zoom-src="images/100000000000046D00000151B465515F.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000046D00000151B465515F.png" width="567" height="169" style="display:inline-block; margin:4px;width:14.99cm;height:4.459cm;" class="odt-zoomable" data-zoom-src="images/100000000000046D00000151B465515F.png" /></td></tr></table>
 
 <ul>
   <li>en [4], le projet web
@@ -923,7 +923,7 @@
 </ul>
 
 <p>Nous pouvons écrire une page [Default.aspx] affichant la liste des clients. La page est la suivante :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000019A00000205E0734611.png" style="display:inline-block; margin:4px;width:5.424cm;height:6.84cm;" class="odt-zoomable" data-zoom-src="images/100000000000019A00000205E0734611.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000019A00000205E0734611.png" width="205" height="259" style="display:inline-block; margin:4px;width:5.424cm;height:6.84cm;" class="odt-zoomable" data-zoom-src="images/100000000000019A00000205E0734611.png" /></td></tr></table>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>N°</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Type</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Nom</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Rôle</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div markdown="block">
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>1
@@ -944,74 +944,74 @@
 
 <p>Le code de présentation de cette page est comme suit :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
-<span class="odt-code-line">&lt;%<span style="color:#0000ff">@</span> <span style="color:#a31515">Page</span> <span style="color:#ff0000">Language</span><span style="color:#0000ff">=&quot;C#&quot;</span> <span style="color:#ff0000">AutoEventWireup</span><span style="color:#0000ff">=&quot;true&quot;</span>  <span style="color:#ff0000">CodeFile</span><span style="color:#0000ff">=&quot;Default.aspx.cs&quot;</span> <span style="color:#ff0000">Inherits</span><span style="color:#0000ff">=&quot;_Default&quot;</span> %&gt;</span>
-<span class="odt-code-line">&lt;%<span style="color:#0000ff">@</span> <span style="color:#a31515">Import</span> <span style="color:#ff0000">Namespace</span><span style="color:#0000ff">=&quot;Ws.RdvMedecins&quot;</span> %&gt;</span>
-<span class="odt-code-line"><span style="color:#0000ff">&lt;!</span><span style="color:#a31515">DOCTYPE</span> <span style="color:#ff0000">html</span> <span style="color:#ff0000">PUBLIC</span> <span style="color:#0000ff">&quot;-//W3C//DTD XHTML 1.1//EN&quot;</span> <span style="color:#0000ff">&quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">&lt;</span><span style="color:#a31515">html</span> <span style="color:#ff0000">xmlns</span><span style="color:#0000ff">=&quot;http://www.w3.org/1999/xhtml&quot;&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">&lt;</span><span style="color:#a31515">head</span> <span style="color:#ff0000">id</span><span style="color:#0000ff">=&quot;Head1&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span>
-<span class="odt-code-line">    <span style="color:#0000ff">&lt;</span><span style="color:#a31515">title</span><span style="color:#0000ff">&gt;</span>Liste des clients<span style="color:#0000ff">&lt;/</span><span style="color:#a31515">title</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">&lt;/</span><span style="color:#a31515">head</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">&lt;</span><span style="color:#a31515">body</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">    <span style="color:#0000ff">&lt;</span><span style="color:#a31515">form</span> <span style="color:#ff0000">id</span><span style="color:#0000ff">=&quot;form1&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span>
-<span class="odt-code-line">        <span style="color:#0000ff">&lt;</span><span style="color:#a31515">div</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">            <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">MultiView</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;Vues&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span>
-<span class="odt-code-line">                <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">View</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;VueClients&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span>
-<span class="odt-code-line">                    Liste des clients :<span style="color:#0000ff">&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span>
-<span class="odt-code-line">                    <span style="color:#0000ff">&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span>
-<span class="odt-code-line">                    <span style="color:#0000ff">&lt;</span><span style="color:#a31515">ul</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">                        <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">Repeater</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;RepeaterClients&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span>
-<span class="odt-code-line">                            <span style="color:#0000ff">&lt;</span><span style="color:#a31515">ItemTemplate</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">                                <span style="color:#0000ff">&lt;</span><span style="color:#a31515">li</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">                                    &lt;%<span style="color:#0000ff">#</span>(Container.DataItem <span style="color:#0000ff">as</span> <span style="color:#2b91af">client</span>).nom%&gt;, &lt;%<span style="color:#0000ff">#</span>(Container.DataItem <span style="color:#0000ff">as</span> <span style="color:#2b91af">client</span>).prenom%&gt;</span>
-<span class="odt-code-line">                                <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">li</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">                            <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">ItemTemplate</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">                        <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">Repeater</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">                    <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">ul</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">                <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">View</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">                <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">View</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;VuesErreurs&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span>
-<span class="odt-code-line">                    L&#x27;erreur suivante s&#x27;est produite :<span style="color:#0000ff">&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span>
-<span class="odt-code-line">                    <span style="color:#0000ff">&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span>
-<span class="odt-code-line">                    <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">Label</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;LabelErreur&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">Label</span><span style="color:#0000ff">&gt;&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">View</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">            <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">MultiView</span><span style="color:#0000ff">&gt;&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span>
-<span class="odt-code-line">        <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">div</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line">    <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">form</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">&lt;/</span><span style="color:#a31515">body</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">&lt;/</span><span style="color:#a31515">html</span><span style="color:#0000ff">&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;%<span style="color:#0000ff">@</span> <span style="color:#a31515">Page</span> <span style="color:#ff0000">Language</span><span style="color:#0000ff">=&quot;C#&quot;</span> <span style="color:#ff0000">AutoEventWireup</span><span style="color:#0000ff">=&quot;true&quot;</span>  <span style="color:#ff0000">CodeFile</span><span style="color:#0000ff">=&quot;Default.aspx.cs&quot;</span> <span style="color:#ff0000">Inherits</span><span style="color:#0000ff">=&quot;_Default&quot;</span> %&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;%<span style="color:#0000ff">@</span> <span style="color:#a31515">Import</span> <span style="color:#ff0000">Namespace</span><span style="color:#0000ff">=&quot;Ws.RdvMedecins&quot;</span> %&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;!</span><span style="color:#a31515">DOCTYPE</span> <span style="color:#ff0000">html</span> <span style="color:#ff0000">PUBLIC</span> <span style="color:#0000ff">&quot;-//W3C//DTD XHTML 1.1//EN&quot;</span> <span style="color:#0000ff">&quot;http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#a31515">html</span> <span style="color:#ff0000">xmlns</span><span style="color:#0000ff">=&quot;http://www.w3.org/1999/xhtml&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#a31515">head</span> <span style="color:#ff0000">id</span><span style="color:#0000ff">=&quot;Head1&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">&lt;</span><span style="color:#a31515">title</span><span style="color:#0000ff">&gt;</span>Liste des clients<span style="color:#0000ff">&lt;/</span><span style="color:#a31515">title</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span><span style="color:#a31515">head</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#a31515">body</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">&lt;</span><span style="color:#a31515">form</span> <span style="color:#ff0000">id</span><span style="color:#0000ff">=&quot;form1&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">&lt;</span><span style="color:#a31515">div</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">MultiView</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;Vues&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">View</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;VueClients&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    Liste des clients :<span style="color:#0000ff">&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    <span style="color:#0000ff">&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    <span style="color:#0000ff">&lt;</span><span style="color:#a31515">ul</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                        <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">Repeater</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;RepeaterClients&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                            <span style="color:#0000ff">&lt;</span><span style="color:#a31515">ItemTemplate</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                                <span style="color:#0000ff">&lt;</span><span style="color:#a31515">li</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                                    &lt;%<span style="color:#0000ff">#</span>(Container.DataItem <span style="color:#0000ff">as</span> <span style="color:#2b91af">client</span>).nom%&gt;, &lt;%<span style="color:#0000ff">#</span>(Container.DataItem <span style="color:#0000ff">as</span> <span style="color:#2b91af">client</span>).prenom%&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                                <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">li</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                            <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">ItemTemplate</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                        <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">Repeater</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">ul</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">View</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">View</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;VuesErreurs&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    L&#x27;erreur suivante s&#x27;est produite :<span style="color:#0000ff">&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    <span style="color:#0000ff">&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    <span style="color:#0000ff">&lt;</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">Label</span> <span style="color:#ff0000">ID</span><span style="color:#0000ff">=&quot;LabelErreur&quot;</span> <span style="color:#ff0000">runat</span><span style="color:#0000ff">=&quot;server&quot;&gt;&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">Label</span><span style="color:#0000ff">&gt;&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">View</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">asp</span><span style="color:#0000ff">:</span><span style="color:#a31515">MultiView</span><span style="color:#0000ff">&gt;&lt;</span><span style="color:#a31515">br</span> <span style="color:#0000ff">/&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">div</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">&lt;/</span><span style="color:#a31515">form</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span><span style="color:#a31515">body</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span><span style="color:#a31515">html</span><span style="color:#0000ff">&gt;</span></span></span>
 </code></pre></div>
 
 <p>On notera, ligne 2, la nécessité d&#x27;importer l&#x27;espace de noms [Ws.RdvMedecins] du proxy C du service web afin que la classe [client] de la ligne 19 soit accessible.</p>
 <p>Le code de contrôle [Default.aspx.cs] associé à la page de présentation [Default.aspx] est le suivant :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
-<span class="odt-code-line"><span style="color:#0000ff">using</span> System;</span>
-<span class="odt-code-line"><span style="color:#0000ff">using</span> Ws.RdvMedecins;</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#0000ff">public</span> <span style="color:#0000ff">partial</span> <span style="color:#0000ff">class</span> <span style="color:#2b91af">_Default</span> : System.Web.UI.<span style="color:#2b91af">Page</span></span>
-<span class="odt-code-line">{</span>
-<span class="odt-code-line">  <span style="color:#0000ff">protected</span> <span style="color:#0000ff">void</span> Page_Load(<span style="color:#0000ff">object</span> sender, <span style="color:#2b91af">EventArgs</span> e)</span>
-<span class="odt-code-line">  {</span>
-<span class="odt-code-line">    <span style="color:#0000ff">try</span></span>
-<span class="odt-code-line">    {</span>
-<span class="odt-code-line">      <span style="color:#008000">// instanciation proxy local de la couche [dao] distante</span></span>
-<span class="odt-code-line">      <span style="color:#2b91af">WsDaoJpaClient</span> dao = <span style="color:#0000ff">new</span> <span style="color:#2b91af">WsDaoJpaClient</span>();</span>
-<span class="odt-code-line">      <span style="color:#008000">// vue client</span></span>
-<span class="odt-code-line">      Vues.ActiveViewIndex = 0;</span>
-<span class="odt-code-line">      <span style="color:#008000">// initialisation vue client</span></span>
-<span class="odt-code-line">      RepeaterClients.DataSource = dao.getAllClients();</span>
-<span class="odt-code-line">      RepeaterClients.DataBind();</span>
-<span class="odt-code-line">    }</span>
-<span class="odt-code-line">    <span style="color:#0000ff">catch</span> (<span style="color:#2b91af">Exception</span> ex)</span>
-<span class="odt-code-line">    {</span>
-<span class="odt-code-line">      <span style="color:#008000">// vue erreurs</span></span>
-<span class="odt-code-line">      Vues.ActiveViewIndex = 1;</span>
-<span class="odt-code-line">      <span style="color:#008000">//initialisation vue erreurs</span></span>
-<span class="odt-code-line">      LabelErreur.Text = ex.ToString();</span>
-<span class="odt-code-line">    }</span>
-<span class="odt-code-line">  }</span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span> System;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span> Ws.RdvMedecins;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">public</span> <span style="color:#0000ff">partial</span> <span style="color:#0000ff">class</span> <span style="color:#2b91af">_Default</span> : System.Web.UI.<span style="color:#2b91af">Page</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">protected</span> <span style="color:#0000ff">void</span> Page_Load(<span style="color:#0000ff">object</span> sender, <span style="color:#2b91af">EventArgs</span> e)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">try</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#008000">// instanciation proxy local de la couche [dao] distante</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#2b91af">WsDaoJpaClient</span> dao = <span style="color:#0000ff">new</span> <span style="color:#2b91af">WsDaoJpaClient</span>();</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#008000">// vue client</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      Vues.ActiveViewIndex = 0;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#008000">// initialisation vue client</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      RepeaterClients.DataSource = dao.getAllClients();</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      RepeaterClients.DataBind();</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">catch</span> (<span style="color:#2b91af">Exception</span> ex)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#008000">// vue erreurs</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      Vues.ActiveViewIndex = 1;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#008000">//initialisation vue erreurs</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      LabelErreur.Text = ex.ToString();</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <p>Ce code est analogue à celui de la version précédente. L&#x27;exécution du projet web donne le résultat suivant :</p>
-<p><img src="images/10000000000001DB0000010B66D19665.png" style="width:8.8cm;height:4.941cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001DB0000010B66D19665.png" /></p>
+<p><img src="images/10000000000001DB0000010B66D19665.png" width="333" height="187" style="width:8.8cm;height:4.941cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001DB0000010B66D19665.png" /></p>
 
 
 
@@ -1047,13 +1047,14 @@
     <div class="md-footer-meta__inner">
 
       <div>
-        <a href="https://tahe.developpez.com" target="_blank">
-          https://tahe.developpez.com
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
         </a>
         <br>
-        Ce cours-tutoriel écrit par <strong>Serge Tahé</strong> est mis à disposition du public selon les termes de la
-        <em>Licence Creative Commons Attribution – Pas d’Utilisation Commerciale –
-        Partage dans les Mêmes Conditions 3.0 non transposé</em>.
+        Ce cours-tutoriel rédigé par <strong>Serge Tahé</strong> est mis à la disposition du public selon les termes de la
+        <em>Licence Creative Commons Attribution – Pas d'utilisation commerciale –
+        Partage dans les mêmes conditions 3.0 non modifiée</em>.
+
       </div>
 
     </div>
